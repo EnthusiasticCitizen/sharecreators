@@ -1,0 +1,190 @@
+// 
+// utilities.scss
+// Extended from Bootstrap
+// 
+
+
+$utilities: ();
+
+$utilities: map-merge(
+  (
+    // Sizing utilities
+    "min-width": (
+      property: min-width,
+      class: min-w,
+      values: (
+        auto: auto
+      )
+    ),
+
+  // Sizing utilities
+  "viewport-height": (
+    property: height,
+    class: vh,
+    responsive: true,
+    values: (
+      100: 100vh
+    )
+  ),
+
+  "height-px": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: (
+        20px: 20px,
+        30px: 30px,
+        40px: 40px,
+        50px: 50px,
+        60px: 60px,
+        70px: 70px,
+        100px: 100px        
+      )
+    ),
+
+
+    // height
+    "height": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: (
+        300: 300px,
+        400: 400px,
+        500: 500px,
+        540: 540px,
+        560: 560px,
+        600: 600px,
+        700: 700px,
+        100: 100%
+      )
+    ),
+
+    // utils bg color soft
+    "background-color-soft": (
+      property: background-color,
+      class: bg,
+      values: map-merge(
+        $theme-soft-colors,
+        (
+    
+        )
+      )
+    ),
+    
+    // Fill color for SVG
+    "fill-color": (
+    property: fill,
+    class: fill,
+    values: map-merge($theme-colors, 
+      (
+        "white": $white
+        )
+      )
+    ),
+
+    // z index
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      values: (
+        0: 0,
+        9: 9,
+        99: 99,
+        n9: -9
+      )
+    ),
+
+    //Rounded
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        4: $border-radius-lg * 2,
+        5: $border-radius-lg * 5
+      )
+    ),
+
+    //Rounded
+    "rounded-top-right": (
+      property: border-top-right-radius,
+      class: rounded-top-right,
+      values: (
+        0: $border-radius-lg * 0,
+        4: $border-radius-lg * 2,
+        5: $border-radius-lg * 3,
+        6: $border-radius-lg * 4,
+        7: $border-radius-lg * 5,
+        8: $border-radius-lg * 6,
+        9: $border-radius-lg * 7,
+        10: $border-radius-lg *22       
+        )
+    ),
+
+    "rounded-top-left": (
+      property: border-top-left-radius,
+      class: rounded-top-left,
+      values: (
+        0: $border-radius-lg * 0,
+        4: $border-radius-lg * 2,
+        5: $border-radius-lg * 3,
+        6: $border-radius-lg * 4,
+        7: $border-radius-lg * 5,
+        8: $border-radius-lg * 6,
+        9: $border-radius-lg * 7,
+        10: $border-radius-lg *22       
+        )
+    ),
+
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-right,
+      values: (
+        0: $border-radius-lg * 0      
+        )
+    ),
+
+    "rounded-bottom-left": (
+      property: border-bottom-left-radius,
+      class: rounded-bottom-left,
+      values: (
+        0: $border-radius-lg * 0      
+        )
+    ),
+
+
+    "rotate": (
+      property: transform,
+      class: rotate,
+      values: (
+        30: rotate(30deg), 
+        50: rotate(50deg),        
+        180: rotate(180deg), 
+        330: rotate(330deg)     
+      )
+    ),
+
+
+
+    // Opacity
+    "opacity": (
+      property: opacity,
+      class: opacity,
+      values: (
+        0: 0,
+        1: 0.1,
+        2: 0.2,
+        3: 0.3,
+        4: 0.4,
+        5: 0.5,
+        6: 0.6,
+        7: 0.7,
+        8: 0.8,
+        9: 0.9
+      )
+    ),
+
+
+  ),
+  $utilities
+);

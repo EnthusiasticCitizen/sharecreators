@@ -1,0 +1,96 @@
+// 
+// type.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional style for theme
+//
+
+// text force color
+.text-white-force *:not(.btn):not(.dropdown-item):not(.dropdown-item > *):not(.badge){
+  color: $white;
+}
+
+//
+// Emphasis
+//
+small,
+.small {
+  font-weight: $font-weight-light;
+}
+
+.smaller {
+  font-size: 60%;
+  font-weight: $font-weight-normal;
+}
+
+// Social media colors
+
+// facebook
+.bg-facebook{
+  background-color: #5d82d1;
+  color: $white;
+  &:hover{
+    background-color: shift-color(#5d82d1, 10%);
+    color: $white;
+  }
+}
+// google
+.bg-google{
+  background-color: #3c7ff1;
+  color: $white;
+  &:hover{
+    background-color: shift-color(#3c7ff1, 10%);
+    color: $white;
+  }
+}
+
+// instagram
+.bg-instagram-gradient{
+  background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: -webkit-radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: $white;
+  background-size: 120% 120%;
+  background-position: right bottom;
+  transition: $transition-base;
+  border: 0;
+  &:hover{
+    background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: -webkit-radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: $white;
+    background-size: 100% 100%;
+    transition: $transition-base;
+    background-position: left bottom;
+  }
+}
+
+// twitter
+.bg-twitter{
+  background-color: #40bff5;
+  color: $white;
+  &:hover{
+    background-color: shift-color(#40bff5, 10%);
+    color: $white;
+  }
+}
+
+// linkedin
+.bg-linkedin{
+  background-color: #238cc8;
+  color: $white;
+  &:hover{
+    background-color: shift-color(#238cc8, 10%);
+    color: $white;
+  }
+}
+
+//Whatsapp
+.bg-whatsapp{
+  background-color: #20c997;
+  color: $white;
+  &:hover{
+    background-color: shift-color(#20c997,10%);
+    color: $white;
+  }
+}

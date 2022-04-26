@@ -1,0 +1,96 @@
+// 
+// nav.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional style for theme
+// 
+.nav-link{
+  &:hover,
+  &:focus,
+  &.active{
+    color: $primary;
+  }
+}
+.nav-link:focus-visible{
+  outline: none;
+}
+
+// Pills
+.nav-pills {
+  .nav-link {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+}
+
+// nav
+.nav.flex-column:not(.nav-pills) .nav-link {
+  padding-left: 0;
+  padding-top: 0.30rem;
+  padding-bottom: 0.30rem;
+}
+
+// nav pill border
+.nav-pill-border-left {
+  .nav-link {
+      position: relative;
+      overflow: hidden;
+      border: $border-width solid $border-color;
+      border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+      padding: 1rem 1.5rem !important;
+      cursor: pointer;
+      &.active {
+          color: $gray-600;
+          background-color: $white;
+          box-shadow: $box-shadow;
+          border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+          &::after {
+              content: "";
+              position: absolute;
+              width: 5px;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-color: $warning;
+         }
+          .show >.nav-link {
+              color: $gray-600;
+              background-color: $white;
+              box-shadow: $box-shadow;
+              border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+         }
+     }
+  }
+}
+
+// Nav pill primary soft
+.nav-pill-bg-primary-soft {
+  .nav-link {
+      border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+      padding: 0.8rem 1.5rem !important;
+      color: $dark;
+      text-align: center;
+      font-weight: $font-weight-bold;
+      margin-bottom: 2px;
+      padding: 0.5rem 1rem;
+      &:hover {
+          color: $primary;
+     }
+      &.active {
+          color: $primary;
+          background-color: rgba($primary,0.2);
+          box-shadow: $box-shadow;
+          border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+     }
+      .show {
+          >.nav-link {
+              color: $primary;
+              background-color: rgba($primary,0.2);
+              box-shadow: $box-shadow;
+              border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+         }
+     }
+  }
+}

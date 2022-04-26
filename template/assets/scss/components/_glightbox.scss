@@ -1,0 +1,11 @@
+// 
+// avatar.scss
+// Theme Component
+
+// GLightbox controls theme
+.plyr__control--overlaid, .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true]{
+  background: $primary;
+}
+.plyr--full-ui input[type=range]{
+  color: $primary;
+}

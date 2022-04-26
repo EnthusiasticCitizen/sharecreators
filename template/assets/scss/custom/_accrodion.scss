@@ -1,0 +1,72 @@
+// Accordion
+.accordion.accordion-icon{
+  .accordion-item{
+   border: none;
+  }
+}
+ 
+ .accordion.accordion-icon{
+   .accordion-button{
+     background: $gray-100;
+     color: $gray-900;
+     font-weight: 700;  
+     border: none;
+     padding-left: 1.7rem;
+   }
+}
+ 
+.accordion.accordion-icon{ 
+  .accordion-button{ 
+    &.collapsed{ 
+      &:before {
+        transform: rotateZ(0deg) 
+      }
+    }
+  }
+}
+ 
+.accordion.accordion-icon{
+  .accordion-button{
+    &:before{
+      content: "";
+      background: $dark;
+      width: 10px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 45%;
+      right: 20px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out; 
+      transform: rotateZ(0deg);
+      }
+   }
+}
+ 
+.accordion.accordion.accordion-icon{
+  .accordion-button{
+    &::after{
+      content: "";
+      background: $dark;
+      width: 10px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 45%;
+      right: 20px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out; 
+      transform: rotateZ(0deg);
+    }
+  }
+}
+ 
+.accordion.accordion-icon{
+  .accordion-button{
+    &.collapsed{
+    &::after{
+      transform: rotateZ(90deg);
+     } 
+    }
+  }
+} 

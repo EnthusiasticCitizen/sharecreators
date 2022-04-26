@@ -1,0 +1,30 @@
+// 
+// pagination.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional style for theme
+//
+
+// For better responsive
+.pagination {
+  .page-item{
+    margin-bottom: 5px;
+    float: left;
+  }
+}
+
+// Custom Pagination
+.pagination.pagination-rounded{
+ .page-item{
+   &:first-child .page-link{
+    border-top-left-radius:1rem;
+    border-bottom-left-radius:1rem;
+   }
+   &:last-child .page-link{
+    border-top-right-radius:1rem;
+    border-bottom-right-radius:0;
+   }
+  }
+}

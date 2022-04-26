@@ -1,0 +1,113 @@
+// 
+// card.scss
+// Extended from Bootstrap
+//
+
+// Quick fix for border radius issue in safari
+.card, .overflow-hidden{
+  will-change: transform;
+}
+
+// Card hover image scale
+.card{
+  .card-image-scale{
+   transition: all .5s ease-in-out; 
+   transform: scale(1);
+ }
+ &:hover
+  .card-image-scale{
+    transform: scale(1.08);
+  }
+}
+
+// Card hover scale border
+.card.card-bg-scale-border{
+  border: $border-width solid $border-color;
+  transition:$transition-base;
+
+  &:hover{
+    border-color:$white;
+    transform: scale(1.01);    
+    box-shadow: $box-shadow;
+  }
+}
+
+// Gradient
+.card{
+  .image-gradient-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 100%;
+    }
+  .gradient-overlay{
+    background: linear-gradient(180deg, rgba(7, 28, 55, 0) 0%, #071c37 100%);
+    }
+}
+
+// Card border hover
+.card-border-hover{
+  border: $border-width $border-color solid;
+  border-radius: $border-radius-lg $border-radius-lg 0 $border-radius-lg;
+  transition: $transition-base;
+    &:hover{
+    border: $border-width $primary solid;  
+  }
+}
+
+// Hovering on card to show element
+.card{
+  .card-element-hover{
+    visibility: hidden;    
+    opacity: 0;
+    transition: $transition-base;
+    z-index: 9;
+  }
+  &:hover{
+    .card-element-hover{
+      visibility: visible;
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+.card-hover-overlay {
+  position: relative;
+	.card-element-hover {
+		height: 100%;
+		padding: 20px;
+		width: 100%;
+		display: flex;
+		flex-direction: column !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	  
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: $dark;
+			display: block;
+			z-index: -1;
+		}
+	}
+  &:hover {
+		.card-element-hover {
+			&:before {
+				opacity: 0.7;
+			}
+		}
+	}
+}
