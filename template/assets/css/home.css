@@ -51,3 +51,14 @@
 .activity-card{
     padding:0 !important;
 }
+
+
+.partners{
+    background: #f7f8f9;
+}
+.partner-item{
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3rem;
+    width: 20%;
+}
