@@ -29,7 +29,7 @@ h1 > a:hover, .h1 > a:hover, h2 > a:hover, .h2 > a:hover, h3 > a:hover, .h3 > a:
 .navbar-light .nav .nav-link:hover,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus,
 .nav-tabs.nav-tabs-line .nav-link.active,
 .blockquote:before,
@@ -59,14 +59,14 @@ h1 > a:hover, .h1 > a:hover, h2 > a:hover, .h2 > a:hover, h3 > a:hover, .h3 > a:
 /* Color important */
 .dropdown-item.active,
 .dropdown-item:active,
-.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .show > .nav-link, 
+.navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .list-group-icon-primary-bg i,
 .list-group-icon-primary-bg span,
 .sidebar-content .navbar-nav .nav-link:hover{
-	color: var(--bs-primary) !important; 
+	color: var(--bs-primary) !important;
 }
 
 /* Navbar dark  */
@@ -76,7 +76,7 @@ h1 > a:hover, .h1 > a:hover, h2 > a:hover, .h2 > a:hover, h3 > a:hover, .h3 > a:
 
 
 /* Color primary dark */
-a:hover, 
+a:hover,
 .navbar-dark .nav .nav-link:hover,
 .list-group-borderless a.list-group-item:hover,
 .page-link:focus,
@@ -106,7 +106,7 @@ button.text-primary-hover:hover,
 .arrow-primary .tns-controls [data-controls]:hover,
 .arrow-dark .tns-controls [data-controls]:hover,
 .plyr__control--overlaid,
-.plyr--video .plyr__control.plyr__tab-focus, 
+.plyr--video .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded=true],
 .page-item.active .page-link,
@@ -135,9 +135,9 @@ header .navbar-nav .nav-link.active:before,
   color: var(--bs-primary);
   background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
 }
-.nav-pills.nav-pill-soft .nav-link.active, 
+.nav-pills.nav-pill-soft .nav-link.active,
 .nav-pills.nav-pill-soft .show > .nav-link,
-.nav-pills.nav-pills-bg-soft .nav-link.active, 
+.nav-pills.nav-pills-bg-soft .nav-link.active,
 .nav-pills.nav-pills-bg-soft .show > .nav-link{
   background-color: var(--bs-primary) !important;
 }
@@ -179,12 +179,12 @@ header .navbar-nav .nav-link.active:before,
 }
 
 /* Background dark*/
-.btn-check:focus + .btn-primary, 
+.btn-check:focus + .btn-primary,
 .btn-primary:focus,
 .btn-check:checked + .btn-primary,
-.btn-check:active + .btn-primary, 
-.btn-primary:active, 
-.btn-primary.active, 
+.btn-check:active + .btn-primary,
+.btn-primary:active,
+.btn-primary.active,
 .show > .btn-primary.dropdown-toggle{
 	background-color: var(--bs-primary);
 }
@@ -318,3 +318,4 @@ fill='%23ff0000' so it interprets like in HEX code: #ff0000; */
 .form-switch .form-check-input:checked {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
+

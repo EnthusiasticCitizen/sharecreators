@@ -1,0 +1,53 @@
+.video-cover{
+    position: relative;
+}
+
+.video-cover .play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+
+.sys-name{
+    display: flex;
+}
+
+.banner-content .use {
+
+}
+
+
+
+.card-parent{
+    display: flex;
+}
+
+.service .video{
+    position: relative;
+    background: #323642;
+    height: 150px;
+}
+
+.service .video .btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -40px;
+}
+
+.service .learn-more{
+    width: 100%;
+}
+
+
+.page-foot-content{
+    justify-content: space-evenly;
+}
+
+.activity-card{
+    padding:0 !important;
+}

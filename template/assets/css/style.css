@@ -3584,11 +3584,23 @@ textarea.form-control-lg {
   background-color: #071c37;
   border-color: #071c37;
 }
+
+.btn-green-light {
+  color: #00060c;
+  background-color: #95dfd4;
+}
+
+.btn-green-dark {
+  color: #00060c;
+  background-color: #54c2b1;
+}
+
 .btn-dark:hover {
   color: #fff;
   background-color: #06182f;
   border-color: #06162c;
 }
+
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
   background-color: #06182f;
@@ -3920,14 +3932,15 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   position: absolute;
+  inset: 0px auto auto -40px !important;
   z-index: 1000;
   display: none;
-  min-width: 15rem;
+  min-width: 10rem;
   padding: 1rem 0;
   margin: 0;
   font-size: 0.875rem;
   color: #7f92aa;
-  text-align: left;
+  text-align: center;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -4136,6 +4149,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 0;
 }
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #047467;
   background-color: transparent;
@@ -4466,11 +4480,11 @@ textarea.form-control-lg {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  z-index: 999;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -4536,7 +4550,6 @@ textarea.form-control-lg {
 
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
-  overflow-y: auto;
 }
 
 @media (min-width: 576px) {
@@ -7726,6 +7739,7 @@ textarea.form-control-lg {
 }
 
 .flex-row {
+  display: flex;
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: row !important;
@@ -9307,7 +9321,8 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: url("../images/bg/under_nav.jpg");
+  background-size:100% 100%;
 }
 
 .bg-secondary {
@@ -17928,7 +17943,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 100px;
+  line-height: 80px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -18009,7 +18024,7 @@ header .navbar-nav .nav-link.active:before {
   }
 }
 .navbar-transparent {
-  background: transparent;
+  background: #020a14;
   position: absolute;
   top: 0;
   left: 0;
@@ -18847,3 +18862,4 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
 
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */
+
