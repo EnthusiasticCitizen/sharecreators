@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>申请免费试用</title>
+        <title>技术支持</title>
 
         <!-- Meta Tags -->
         <meta charset="utf-8" />
@@ -23,7 +23,7 @@
 
         <!-- Theme CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/support.css" />
     </head>
 
     <body>
@@ -37,18 +37,9 @@ Header START -->
 Header END -->
 
         <!-- **************** MAIN CONTENT START **************** -->
-        <main class="contact-main">
+        <main class="support-main">
             <!-- =======================
 Hero banner START -->
-            <section class="bg-primary position-relative banner">
-                <!-- Main navbar START -->
-                <div class="navbar-collapse" id="navbarCollapse"></div>
-                <!-- Main navbar END -->
-                <!--	main-nav end	-->
-
-                <!--	banner content start	-->
-                <div class="container banner-content pt-5 mt-4 banner-text">申请免费试用</div>
-            </section>
             <!-- =======================
 Hero banner END -->
 
@@ -57,6 +48,23 @@ Contact START -->
             <section>
                 <div class="container">
                     <div class="row g-4">
+                        <div class="col-lg-5 ps-lg-3">
+                            <div class="row g-4">
+                                <div class="col-lg-10">
+                                    <div class="shadow p-4 rounded-3 mb-4 recommend">
+                                        <!-- Title -->
+                                        <h6>使用产品遇到难题？</h6>
+                                        <div class="par">
+                                            如果您在使用产品时遇到难题，请填写右侧表格，我们将有专业的技术人员在24小时内为您提供帮助
+                                        </div>
+
+                                        <button id="demo-video" type="submit" class="btn btn-warning mb-0 send-msg-btn">
+                                            查看演示视频
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-7">
                             <!-- Title -->
                             <h2 class="mb-3">申请免费试用</h2>
@@ -72,7 +80,7 @@ Contact START -->
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="inputPhonenumber" class="form-label">联系人电话*</label>
+                                    <label for="inputPhonenumber" class="form-label">联系电话</label>
                                     <input
                                         type="text"
                                         class="form-control"
@@ -81,12 +89,12 @@ Contact START -->
                                     />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputSubject" class="form-label">联系人微信*</label>
-                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入联系人微信" />
+                                    <label for="inputSubject" class="form-label">企业名称</label>
+                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入企业名称" />
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="exampleFormControlTextarea2" class="form-label">留言</label>
+                                    <label for="exampleFormControlTextarea2" class="form-label">留言*</label>
                                     <textarea
                                         class="form-control"
                                         id="exampleFormControlTextarea2"
@@ -101,35 +109,6 @@ Contact START -->
                                 </div>
                             </form>
                             <!-- Form END -->
-                        </div>
-
-                        <div class="col-lg-5 ps-lg-3">
-                            <div class="row g-4">
-                                <div class="col-lg-10">
-                                    <div class="shadow p-4 rounded-3 mb-4 recommend">
-                                        <!-- Title -->
-                                        <h6>即刻开始试用我们的Orange智能 数字资产管理系统吧！</h6>
-                                        <div class="par">填写在线申请表格，我们将在24小时内回复您！</div>
-                                        <div class="par">
-                                            我们很乐意为您提供以下帮助，以加深您对Orange的了解：
-                                            <ul>
-                                                <li>· 详尽的产品与功能介绍,帮助您快速上手</li>
-                                                <li>· 针对所处的行业与业务场景,打造专业的解决方案</li>
-                                                <li>· 根据您的团队规模和需求，提供最优的价格方案</li>
-                                                <li>· 专业的产品顾问，与您深入沟通需求</li>
-                                            </ul>
-                                        </div>
-                                        <div class="par">
-                                            您也可以通过以下方式直接联系我们：
-                                            <ul>
-                                                <li>· 办公时间：9:00-18:00</li>
-                                                <li>· Tel.: 18628061890（微信同号)</li>
-                                                <li>· Email: hr@sharecreators.com</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!-- Row END -->
@@ -165,12 +144,15 @@ JS libraries, plugins and custom scripts -->
 
         <!-- Template Functions -->
         <script src="assets/js/functions.js"></script>
-
-        <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
-        <script>
-			$('#header').load('./components/header.html')
-            $('#navbarCollapse').load('./components/nav.html')
-            $('#footer').load('./components/footer.html')
-        </script>
     </body>
+
+    <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+		$('#header').load('./components/header.html')
+		$('#navbarCollapse').load('./components/nav.html')
+		$('#footer').load('./components/footer.html')
+        $('#demo-video').on('click', function () {
+            location.href = 'https://www.ixigua.com/home/361072885505245'
+        })
+    </script>
 </html>
