@@ -53,12 +53,10 @@
 }
 
 
-.partners{
-    background: #f7f8f9;
-}
 .partner-item{
     border-radius: 50%;
     overflow: hidden;
-    padding: 3rem;
+    box-sizing: border-box;
     width: 20%;
+    margin: 3rem;
 }
