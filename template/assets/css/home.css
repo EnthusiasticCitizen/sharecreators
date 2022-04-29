@@ -1,8 +1,8 @@
-.video-cover{
+.video-cover {
     position: relative;
 }
 
-.video-cover .play{
+.video-cover .play {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -10,27 +10,43 @@
     margin-left: -10px;
 }
 
-.sys-name{
+.sys-name {
     display: flex;
 }
 
 .banner-content .use {
-
 }
 
-
-
-.card-parent{
+#home1 .free-btn {
+    width: 10rem;
+    height: 3.6rems;
+    background-color: #95dfd4;
+    border-color: #95dfd4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00060c;
+}
+.welcome h3 {
+    margin-bottom: 2.8rem;
+}
+.welcome .welcome-content {
+    width: 80%;
+    line-height: 2rem;
+    font-size: 0.94rem;
+    padding: 0;
+    margin: auto;
+}
+.card-parent {
     display: flex;
 }
 
-.service .video{
+.service .video {
     position: relative;
     background: #323642;
     height: 150px;
 }
 
-.service .video .btn{
+.service .video .btn {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -39,24 +55,44 @@
     margin-top: -40px;
 }
 
-.service .learn-more{
+.service .learn-more {
     width: 100%;
 }
 
-
-.page-foot-content{
+.page-foot-content {
     justify-content: space-evenly;
 }
 
-.activity-card{
-    padding:0 !important;
+.activity-card {
+    padding: 0 !important;
 }
 
-
-.partner-item{
+.partner-item {
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box;
     width: 20%;
     margin: 3rem;
+}
+.advan {
+    background-color: #f7f8f9;
+}
+.advan .advan-title {
+    margin-bottom: 5rem;
+}
+.advan .icon-bg {
+    background: #c8ddd9;
+}
+.advan .icon-bg img {
+    width: 50%;
+    height: 50%;
+}
+.advan .advan-item-title {
+    font-size: 0.9rem;
+}
+.advan .card-text {
+    color: #000;
+}
+.advan .advan-content-item {
+    padding: 2rem;
 }

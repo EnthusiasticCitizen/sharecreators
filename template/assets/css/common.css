@@ -1,0 +1,30 @@
+html {
+    font-family: SourceHanSansCN;
+}
+.type-area {
+    width: 86%;
+    margin: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.contact-code {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.free-code {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.wechat-code {
+    width: 2.5rem;
+    height: 2.5rem;
+}

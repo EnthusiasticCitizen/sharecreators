@@ -1,3 +1,9 @@
+
+# 存在的问题
+
+## orange行业痛点icon颜色不对
+
+
 ## Thank you for purchasing our item ##
 
 Once you have downloaded the package, after template extracting, you will see the following files & directory structure:

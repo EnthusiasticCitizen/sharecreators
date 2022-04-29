@@ -3485,13 +3485,13 @@ textarea.form-control-lg {
 
 .btn-warning {
   color: #000;
-  background-color: #ffb900;
-  border-color: #ffb900;
+  background-color: #95dfd4;
+  border-color: #95dfd4;
 }
 .btn-warning:hover {
   color: #000;
-  background-color: #ffc426;
-  border-color: #ffc01a;
+  background-color: #aff5ea;
+  border-color: #aff5ea;
 }
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #000;
@@ -3511,8 +3511,8 @@ textarea.form-control-lg {
 }
 .btn-warning:disabled, .btn-warning.disabled {
   color: #000;
-  background-color: #ffb900;
-  border-color: #ffb900;
+  background-color: #95dfd4;
+  border-color: #95dfd4;
 }
 
 .btn-danger {
