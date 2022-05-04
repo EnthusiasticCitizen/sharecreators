@@ -1,30 +1,92 @@
 html {
-    font-family: SourceHanSansCN;
+  font-family: SourceHanSansCN;
 }
 .type-area {
-    width: 86%;
-    margin: auto;
+  width: 86%;
+  margin: auto;
 }
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .contact-code {
-    width: 2.5rem;
-    height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .free-code {
-    width: 2.5rem;
-    height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .wechat-code {
-    width: 2.5rem;
-    height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.navbar-collapse.collapse .nav-item a {
+  white-space: nowrap;
+}
+/* @media (max-width: 600px) {
+    .navbar-collapse.collapse {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 50%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 10;
+    }
+    .navbar-collapse.collapse .navbar-nav {
+        flex-direction: column;
+
+    }
+} */
+.line1 {
+  width: 100px;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.codes {
+  display: flex;
+}
+.codes img {
+  width: 72px;
+  height: 72px;
+}
+.codes div {
+  text-align: center;
+  margin: 5px;
+}
+
+.page-foot-content .foot-service {
+  min-width: 230px;
+}
+
+.page-foot-content .foot-contact {
+  min-width: 350px;
+}
+
+.partners {
+  flex-wrap: wrap;
+}
+.partner-item {
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 152px;
+  height: 152px;
+  padding: 0;
+  margin: 3rem;
+}
+
+.partner-item img {
+  width: 100%;
+  height: 100%;
 }

@@ -67,13 +67,6 @@
     padding: 0 !important;
 }
 
-.partner-item {
-    border-radius: 50%;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 20%;
-    margin: 3rem;
-}
 .advan {
     background-color: #f7f8f9;
 }
@@ -95,4 +88,7 @@
 }
 .advan .advan-content-item {
     padding: 2rem;
+}
+.service-card {
+    max-width: 360px;
 }
