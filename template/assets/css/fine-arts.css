@@ -1,0 +1,68 @@
+#navbarCollapse {
+    position: relative;
+    z-index: 1;
+}
+.fine-arts-banner {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+}
+.navbar-collapse.collapse .nav-item .nav-link {
+    color: #fff;
+}
+#fine-arts-banner {
+    box-sizing: content-box;
+    padding-bottom: 0;
+    min-height: 500px;
+}
+#tns1-iw {
+    margin: 0;
+}
+.py-3 {
+    padding: 0 !important;
+}
+.bg-fine-arts #tns1 > .tns-item {
+    padding-right: 0;
+}
+.bg-fine-arts {
+    max-height: 1080px;
+}
+.orange-main .pain .pain-content .item-title .img {
+    background-color: #161a19;
+}
+
+.collections {
+    position: relative;
+}
+.collections .collections-title {
+    height: 200px;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+.collections .left,
+.collections .center,
+.collections .right {
+    position: absolute;
+    top: 200px;
+    width: 33.33%;
+    padding: 0 1.3rem;
+}
+
+.collections .left {
+    left: 0;
+}
+
+.collections .center {
+    left: 33.33%;
+}
+
+.collections .right {
+    left: 66.66%;
+}
+.collections .round {
+    border-radius: 16px;
+    border-bottom-right-radius: 0;
+    margin-bottom: 1.99rem;
+}

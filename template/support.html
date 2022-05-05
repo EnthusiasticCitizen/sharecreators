@@ -23,6 +23,7 @@
 
         <!-- Theme CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/support.css" />
     </head>
 
@@ -31,6 +32,41 @@
 Header START -->
         <header id="header" class="navbar-dark navbar-transparent">
             <!-- Logo Nav START -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo START -->
+                    <div class="logo">
+                        <h1>
+                            <a class="navbar-brand" href="index.html" title="sharecreators"> sharecreators </a>
+                        </h1>
+                    </div>
+                    <!-- Logo END -->
+
+                    <!-- Responsive navbar toggler -->
+                    <button
+                        class="navbar-toggler ms-auto"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav right START -->
+                    <div class="d-none d-sm-block">
+                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
+                        <a href="sign-up.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
+                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">
+                            <img src="./assets/images/public/weChat.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- Nav right END -->
+                </div>
+            </nav>
+
             <!-- Logo Nav END -->
         </header>
         <!-- =======================
@@ -126,8 +162,7 @@ Map END -->
 
         <!-- =======================
 Footer START  -->
-        <footer id="footer" class="bg-black pt-5">
-        </footer>
+        <footer id="footer" class="bg-black pt-5"></footer>
         <!-- =======================
 Footer END  -->
 
@@ -148,8 +183,7 @@ JS libraries, plugins and custom scripts -->
 
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
     <script>
-		$('#header').load('./components/header.html')
-		$('#footer').load('./components/footer.html')
+        $('#footer').load('./components/footer.html')
         $('#demo-video').on('click', function () {
             location.href = 'https://www.ixigua.com/home/361072885505245'
         })
