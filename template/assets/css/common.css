@@ -12,6 +12,11 @@ html {
     align-items: center;
 }
 
+.bg-center {
+    background-position: center center;
+    background-size: cover;
+}
+
 li {
     list-style: none;
 }
@@ -89,15 +94,15 @@ li {
 }
 
 .page-foot-content .foot-about {
-  min-width: 150px;
+    min-width: 150px;
 }
 
 .page-foot-content .foot-service {
-  min-width: 150px;
+    min-width: 150px;
 }
 
 .page-foot-content .foot-more {
-  min-width: 100px;
+    min-width: 100px;
 }
 
 .partners {
@@ -138,28 +143,26 @@ li {
 }
 
 @media (max-width: 768px) {
-  .logo {
-    width: 105.35px;
-    height: 50px;
-  }
-  .partner-item {
-    width: 76px;
-    height: 76px;
-    margin: 20px;
-  }
+    .logo {
+        width: 105.35px;
+        height: 50px;
+    }
+    .partner-item {
+        width: 76px;
+        height: 76px;
+        margin: 20px;
+    }
 }
 
-
 @media (max-width: 604px) {
-  .navbar-collapse {
-    position: absolute;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(255,255,255,.7);
-    z-index: 999;
-  }
-  .navbar-collapse .navbar-nav {
-    flex-direction: column;
-  }
-
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 999;
+    }
+    .navbar-collapse .navbar-nav {
+        flex-direction: column;
+    }
 }

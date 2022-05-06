@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>技术支持</title>
+        <title>联系我们</title>
 
         <!-- Meta Tags -->
         <meta charset="utf-8" />
@@ -24,7 +24,7 @@
         <!-- Theme CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/support.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css" />
     </head>
 
     <body>
@@ -73,9 +73,18 @@ Header START -->
 Header END -->
 
         <!-- **************** MAIN CONTENT START **************** -->
-        <main class="support-main">
+        <main class="contact-main">
             <!-- =======================
 Hero banner START -->
+            <section class="bg-primary position-relative banner">
+                <!-- Main navbar START -->
+                <div class="collapse navbar-collapse show" id="navbarCollapse"></div>
+                <!-- Main navbar END -->
+                <!--	main-nav end	-->
+
+                <!--	banner content start	-->
+                <div class="container banner-content pt-5 mt-4 banner-text" onclick="goContact()">联系我们</div>
+            </section>
             <!-- =======================
 Hero banner END -->
 
@@ -84,38 +93,22 @@ Contact START -->
             <section>
                 <div class="container">
                     <div class="row g-4">
-                        <div class="col-lg-5 ps-lg-3">
-                            <div class="row g-4">
-                                <div class="col-lg-10">
-                                    <div class="shadow p-4 rounded-3 mb-4 recommend">
-                                        <!-- Title -->
-                                        <div class="par">
-                                            如果您想与我们合作，或者对我们的产品和服务有任何意见或建议，欢迎您拨打18628061890（微信同号，办公时间9：00-18：00），或者给我们留言，我们将在24小时内回复您
-                                        </div>
-                                        <div class="wechat" style="width: 50%; height: 50%; margin: auto">
-                                            <img src="./assets/images/public/wechat-code.png" alt="" />
-                                            <div style="text-align: center">微信公众号</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-7">
                             <!-- Title -->
-                            <h2 class="mb-3">申请免费试用</h2>
+                            <h2 class="mb-3">联系我们</h2>
                             <!-- Form START -->
                             <form class="row g-3">
-                                <div class="col-md-12">
-                                    <label for="inputName" class="form-label">联系人姓名*</label>
+                                <div class="col-md-6">
+                                    <label for="inputName" class="form-label">姓名*</label>
                                     <input type="text" class="form-control" id="inputName" placeholder="请输入联系人姓名" />
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="inputEmail" class="form-label">公司名称*</label>
+                                <div class="col-md-6">
+                                    <label for="inputEmail" class="form-label">手机号*</label>
                                     <input type="email" class="form-control" id="inputEmail" placeholder="请输入联系人邮箱" />
                                 </div>
 
-                                <div class="col-md-12">
-                                    <label for="inputPhonenumber" class="form-label">联系电话</label>
+                                <div class="col-md-6">
+                                    <label for="inputPhonenumber" class="form-label">公司名称*</label>
                                     <input
                                         type="text"
                                         class="form-control"
@@ -123,6 +116,11 @@ Contact START -->
                                         placeholder="请输入联系人电话"
                                     />
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="inputSubject" class="form-label">联系人微信</label>
+                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入联系人微信" />
+                                </div>
+
                                 <div class="col-12">
                                     <label for="exampleFormControlTextarea2" class="form-label">留言*</label>
                                     <textarea
@@ -135,10 +133,35 @@ Contact START -->
 
                                 <div class="col-12">
                                     <!-- Button -->
-                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn">发送</button>
+                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn">发送申请</button>
                                 </div>
                             </form>
                             <!-- Form END -->
+                        </div>
+
+                        <div class="col-lg-5 ps-lg-3">
+                            <div class="row g-4">
+                                <div class="col-lg-10">
+                                    <div class="shadow p-4 rounded-3 mb-4 recommend">
+                                        <!-- Title -->
+                                        <h6>
+                                            如果您想与我们合作，或者对我们 的产品和服务有任何意见或建议，
+                                            欢迎留言或通过以下方式联系我们， 我们将在24小时内回复您！
+                                        </h6>
+                                        <div class="par">
+                                            <ul>
+                                                <li>· 办公时间：9:00-18:00</li>
+                                                <li>· Tel.: 18628061890（微信同号)</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="wechat" style="width: 50%; height: 50%; margin: auto">
+                                            <img src="./assets/images/public/wechat-code.png" alt="" />
+                                            <div style="text-align: center; font-weight: bold">扫一扫联系我们</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Row END -->
@@ -149,6 +172,35 @@ Contact END -->
 
             <!-- =======================
 Map START -->
+            <section class="visit">
+                <div class="type-area">
+                    <div class="visit-title">用户评价</div>
+                    <ul class="visit-content row">
+                        <li class="visit-content-item col-4 shadow jjs">
+                            <div class="par1">旧金山</div>
+                            <div class="par2">Suit 412, 800 Airport Blvd, Burlingame CA 94010</div>
+                            <div class="par3">办公时间</div>
+                            <div class="par4">周一 至 周五</div>
+                            <div class="par4">09:30 - 16:30</div>
+                        </li>
+                        <li class="visit-content-item col-4 shadow cd">
+                            <div class="par1">成都</div>
+                            <div class="par2">成都市武侯区天府大道北段 茂业中心C座2517</div>
+                            <div class="par3">办公时间</div>
+                            <div class="par4">周一 至 周五</div>
+                            <div class="par4">09:30 - 16:30</div>
+                        </li>
+                        <li class="visit-content-item col-4 shadow bj">
+                            <div class="par1">北京</div>
+                            <div class="par2">北京市昌平区 新龙大厦B座916</div>
+                            <div class="par3">办公时间</div>
+                            <div class="par4">周一 至 周五</div>
+                            <div class="par4">09:30 - 16:30</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
             <!-- =======================
 Map END -->
         </main>
@@ -173,13 +225,14 @@ JS libraries, plugins and custom scripts -->
 
         <!-- Template Functions -->
         <script src="assets/js/functions.js"></script>
-    </body>
 
-    <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
-    <script>
-        $('#footer').load('./components/footer.html')
-        $('#demo-video').on('click', function () {
-            location.href = 'https://www.ixigua.com/home/361072885505245'
-        })
-    </script>
+        <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+        <script>
+            $('#navbarCollapse').load('./components/nav.html')
+            $('#footer').load('./components/footer.html')
+            function goContact(){
+                location.href = './contact.html'
+            }
+        </script>
+    </body>
 </html>

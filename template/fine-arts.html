@@ -94,20 +94,26 @@ Main banner START -->
                         data-loop
                     >
                         <div>
-                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner1.jpeg" alt="" />
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner01.png" alt="" />
                         </div>
 
                         <div>
-                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner2.jpg" alt="" />
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner02.png" alt="" />
                         </div>
                         <div>
-                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner3.png" alt="" />
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner03.png" alt="" />
                         </div>
                         <div>
-                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner4.jpg" alt="" />
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner04.png" alt="" />
                         </div>
                         <div>
-                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner5.png" alt="" />
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner05.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner06.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="image-gradient-overlay" src="./assets/images/fine-arts/banner07.png" alt="" />
                         </div>
                     </div>
                     <!-- Tiny slider END -->
@@ -126,7 +132,7 @@ Main banner START -->
                     </div>
                 </div>
                 <div class="col-lg-6 right">
-                    <a data-glightbox data-gallery="office-tour" href="./assets/video/index/video1.mp4">
+                    <a data-glightbox data-gallery="office-tour" href="./assets/video/header-contact-introduce.mp4">
                         <img src="./assets/images/icon/play.png" alt="" />
                     </a>
                 </div>
@@ -134,7 +140,7 @@ Main banner START -->
             <section class="pain pb-2">
                 <div class="type-area">
                     <div class="pain-title">为什么选择我们？</div>
-                    <div class="pain-content container row">
+                    <div class="pain-content row">
                         <div class="col-lg-4">
                             <div class="item-title">
                                 <div class="img flex-center">
@@ -269,8 +275,8 @@ JS libraries, plugins and custom scripts -->
                             let leftH = left.clientHeight,
                                 centerH = center.clientHeight,
                                 rightH = right.clientHeight
-                            collections.style.height =
-                                (leftH > centerH && left > rightH ? leftH : centerH > rightH ? centerH : rightH) + 300 + 'px'
+
+                            collections.style.height = container.clientHeight + 200 + 'px'
                         }, 1000)
                     })
                 }

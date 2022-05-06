@@ -124,8 +124,8 @@ ul {
 }
 
 .orange-main .pain .pain-content .item-title .img img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .orange-main .pain .pain-content .item-content {
@@ -146,7 +146,7 @@ ul {
 
 .orange-main .function .function-item {
   display: flex;
-  max-width: 100rem;
+  max-width: 1000px;
   padding: 2.5rem;
   background-color: #fff;
   border-radius: 1.56rem;
@@ -198,6 +198,31 @@ ul {
   min-width: 300px;
   height: 16.347rem;
   background-color: #000;
+}
+.orange-main .function .card-video.function-search {
+  background: url(../video/function-search.png);
+  background-position: center center;
+  background-size: cover;
+}
+.orange-main .function .card-video.function-look {
+  background: url(../video/function-look.png);
+  background-position: center center;
+  background-size: cover;
+}
+.orange-main .function .card-video.function-ai {
+  background: url(../video/function-ai.png);
+  background-position: center center;
+  background-size: cover;
+}
+.orange-main .function .card-video.function-integration {
+  background: url(../video/function-integration.png);
+  background-position: center center;
+  background-size: cover;
+}
+.orange-main .function .card-video.function-collaboration {
+  background: url(../video/function-collaboration.png);
+  background-position: center center;
+  background-size: cover;
 }
 .orange-main .function .card-video img {
   width: 3.125rem;
@@ -330,6 +355,6 @@ ul {
   }
   .orange-main .function .card-video {
     min-width: 150px;
-    height: 100px;
+    height: 150px;
   }
 }

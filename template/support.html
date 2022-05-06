@@ -105,14 +105,15 @@ Contact START -->
                             <!-- Title -->
                             <h2 class="mb-3">申请免费试用</h2>
                             <!-- Form START -->
-                            <form class="row g-3">
+                            <form class="row g-3" id="form">
+                                <input type="text" style="display: none" name="to_name" value="peng@sharecreators.com" />
                                 <div class="col-md-6">
                                     <label for="inputName" class="form-label">联系人姓名*</label>
                                     <input type="text" class="form-control" id="inputName" placeholder="请输入联系人姓名" />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail" class="form-label">联系人邮箱*</label>
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="请输入联系人邮箱" />
+                                    <input type="email" class="form-control" name="from_name" id="inputEmail" placeholder="请输入联系人邮箱" value="a_new_boy@163.com" />
                                 </div>
 
                                 <div class="col-md-6">
@@ -133,6 +134,7 @@ Contact START -->
                                     <label for="exampleFormControlTextarea2" class="form-label">留言*</label>
                                     <textarea
                                         class="form-control"
+                                        name="message"
                                         id="exampleFormControlTextarea2"
                                         rows="3"
                                         placeholder="请输入留言"
@@ -141,7 +143,9 @@ Contact START -->
 
                                 <div class="col-12">
                                     <!-- Button -->
-                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn">发送申请</button>
+                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn" onclick="send()">
+                                        发送申请
+                                    </button>
                                 </div>
                             </form>
                             <!-- Form END -->
@@ -179,6 +183,7 @@ JS libraries, plugins and custom scripts -->
 
         <!-- Template Functions -->
         <script src="assets/js/functions.js"></script>
+        <script src="assets/js/email.min.js"></script>
     </body>
 
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
@@ -187,5 +192,49 @@ JS libraries, plugins and custom scripts -->
         $('#demo-video').on('click', function () {
             location.href = 'https://www.ixigua.com/home/361072885505245'
         })
+
+        // $('#form').submit(function (e) {
+        //     console.log(e)
+        //     send(e.target)
+
+        //     e.preventDefault()
+        //     return false
+        // })
+        function send(data) {
+            // let apiKeys = {
+            //     USER_ID: 'KUtzJ7DVHcVovx_0K',
+            //     TEMPLATE_ID: 'template_q0rve99',
+            // }
+            // emailjs.send('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID).then(
+            //     (result) => {
+            //         alert(result.text)
+            //     },
+            //     (error) => {
+            //         alert(error.text)
+            //     }
+            // )
+            // return true
+        }
+        const sendEmail = (e) => {
+            e.preventDefault()
+            let apiKeys = {
+                USER_ID: 'KUtzJ7DVHcVovx_0K',
+                TEMPLATE_ID: 'template_q0rve99',
+            }
+
+            emailjs.sendForm('service_80fp6x6', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID).then(
+                (result) => {
+                    console.log(result.text)
+                    alert('发送成功！')
+                },
+                (error) => {
+                    console.log(error.text)
+                    alert('发送失败！')
+                }
+            )
+        }
+
+        const form = document.querySelector('#form')
+        form.addEventListener('submit', sendEmail)
     </script>
 </html>

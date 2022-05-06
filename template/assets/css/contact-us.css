@@ -1,10 +1,9 @@
-
 .contact-main .banner {
     height: 600px;
 }
 
 .contact-main .banner-text {
-    font-size:60px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     color: #000;
@@ -34,7 +33,7 @@
     margin-bottom: 35px;
 }
 
-.contact-main .recommend .par ul{
+.contact-main .recommend .par ul {
     margin-top: 20px;
     padding-left: 0;
 }
@@ -42,4 +41,71 @@
     height: 30px;
     font-size: 12px;
     list-style: none;
+}
+
+.visit {
+    background-color: #f7f8f9;
+    padding: 6.25rem 0;
+}
+.visit .visit-title {
+    margin-bottom: 4rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+}
+.visit .visit-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.visit .visit-content .visit-content-item {
+    width: 30%;
+    min-width: 300px;
+    border-radius: 50px 50px 0px 50px;
+    margin: 0 0.69rem 2rem;
+    padding: 6.25rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.visit .visit-content .visit-content-item.jjs {
+    background: url(../images/contact/jjs.png) no-repeat 0 0;
+    background-size: 120% 120%;
+    background-position: center center;
+}
+.visit .visit-content .visit-content-item.bj {
+    background: url(../images/contact/bj.png) no-repeat 0 0;
+    background-size: 120% 120%;
+    background-position: center center;
+}
+.visit .visit-content .visit-content-item.cd {
+    background: url(../images/contact/cd.png) no-repeat 0 0;
+    background-size: 120% 120%;
+    background-position: center center;
+}
+.visit .visit-content .visit-content-item .par1 {
+    font-size: 1.56rem;
+    font-family: SourceHanSansCN;
+    font-weight: bold;
+    color: #fff;
+}
+.visit .visit-content .visit-content-item .par2 {
+    max-width: 13rem;
+    margin: 2.8rem auto 3.875rem;
+    font-size: 1rem;
+    font-family: SourceHanSansCN;
+    color: #fff;
+}
+.visit .visit-content .visit-content-item .par3 {
+    font-size: 1rem;
+    font-family: SourceHanSansCN;
+    font-weight: bold;
+    color: #fff;
+}
+.visit .visit-content .visit-content-item .par4 {
+    margin: 1.4rem 0;
+    font-size: 1rem;
+    font-family: SourceHanSansCN;
+    color: #fff;
 }

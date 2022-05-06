@@ -1,0 +1,35 @@
+
+.banner-title {
+    text-align: left;
+    font-size: max(3rem, 33.9%);
+    font-weight: bold;
+    color: #000;
+}
+
+.banner-subTitle {
+    text-align: left;
+    font-size: max(1rem, 33.9%);
+    color: #000;
+}
+.creative {
+    background-color: #f2f0ee;
+}
+.creative .partner-item {
+
+}
+.plugin-img {
+    overflow: hidden;
+}
+.plugin-img img {
+    width: 120%;
+    max-width: 120%;
+    height: 120%;
+}
+.plugin-title {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.3rem;
+}
+.plugin-text {
+    text-align: center;
+}
