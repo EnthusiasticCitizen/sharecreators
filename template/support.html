@@ -106,14 +106,28 @@ Contact START -->
                             <h2 class="mb-3">申请免费试用</h2>
                             <!-- Form START -->
                             <form class="row g-3" id="form">
-                                <input type="text" style="display: none" name="to_name" value="peng@sharecreators.com" />
+                                <input type="text" style="display: none" name="page_name" value="技术支持" />
                                 <div class="col-md-6">
                                     <label for="inputName" class="form-label">联系人姓名*</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="请输入联系人姓名" />
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="user_name"
+                                        id="inputName"
+                                        data-require="1"
+                                        placeholder="请输入联系人姓名"
+                                    />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail" class="form-label">联系人邮箱*</label>
-                                    <input type="email" class="form-control" name="from_name" id="inputEmail" placeholder="请输入联系人邮箱" value="a_new_boy@163.com" />
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        data-require="1"
+                                        name="from_email"
+                                        id="inputEmail"
+                                        placeholder="请输入联系人邮箱"
+                                    />
                                 </div>
 
                                 <div class="col-md-6">
@@ -121,13 +135,20 @@ Contact START -->
                                     <input
                                         type="text"
                                         class="form-control"
+                                        name="user_phone"
                                         id="inputPhonenumber"
                                         placeholder="请输入联系人电话"
                                     />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputSubject" class="form-label">企业名称</label>
-                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入企业名称" />
+                                    <label for="inputCompanyName" class="form-label">企业名称</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="company_name"
+                                        id="inputCompanyName"
+                                        placeholder="请输入企业名称"
+                                    />
                                 </div>
 
                                 <div class="col-12">
@@ -135,6 +156,7 @@ Contact START -->
                                     <textarea
                                         class="form-control"
                                         name="message"
+                                        data-require="1"
                                         id="exampleFormControlTextarea2"
                                         rows="3"
                                         placeholder="请输入留言"
@@ -143,9 +165,7 @@ Contact START -->
 
                                 <div class="col-12">
                                     <!-- Button -->
-                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn" onclick="send()">
-                                        发送申请
-                                    </button>
+                                    <button type="submit" class="btn btn-warning mb-0 send-msg-btn">发送申请</button>
                                 </div>
                             </form>
                             <!-- Form END -->
@@ -172,7 +192,6 @@ Footer END  -->
 
         <!-- Back to top -->
         <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
-
         <!-- =======================
 JS libraries, plugins and custom scripts -->
 
@@ -183,58 +202,17 @@ JS libraries, plugins and custom scripts -->
 
         <!-- Template Functions -->
         <script src="assets/js/functions.js"></script>
-        <script src="assets/js/email.min.js"></script>
     </body>
 
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script src="assets/js/apiKeys.js"></script>
+    <script src="assets/js/common.js"></script>
     <script>
         $('#footer').load('./components/footer.html')
         $('#demo-video').on('click', function () {
             location.href = 'https://www.ixigua.com/home/361072885505245'
         })
 
-        // $('#form').submit(function (e) {
-        //     console.log(e)
-        //     send(e.target)
-
-        //     e.preventDefault()
-        //     return false
-        // })
-        function send(data) {
-            // let apiKeys = {
-            //     USER_ID: 'KUtzJ7DVHcVovx_0K',
-            //     TEMPLATE_ID: 'template_q0rve99',
-            // }
-            // emailjs.send('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID).then(
-            //     (result) => {
-            //         alert(result.text)
-            //     },
-            //     (error) => {
-            //         alert(error.text)
-            //     }
-            // )
-            // return true
-        }
-        const sendEmail = (e) => {
-            e.preventDefault()
-            let apiKeys = {
-                USER_ID: 'KUtzJ7DVHcVovx_0K',
-                TEMPLATE_ID: 'template_q0rve99',
-            }
-
-            emailjs.sendForm('service_80fp6x6', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID).then(
-                (result) => {
-                    console.log(result.text)
-                    alert('发送成功！')
-                },
-                (error) => {
-                    console.log(error.text)
-                    alert('发送失败！')
-                }
-            )
-        }
-
-        const form = document.querySelector('#form')
-        form.addEventListener('submit', sendEmail)
     </script>
 </html>

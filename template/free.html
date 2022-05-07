@@ -97,34 +97,59 @@ Contact START -->
                             <!-- Title -->
                             <h2 class="mb-3">申请免费试用</h2>
                             <!-- Form START -->
-                            <form class="row g-3">
+                            <form class="row g-3" id="form">
+                                <input type="text" style="display: none" name="page_name" value="申请免费试用" />
                                 <div class="col-md-6">
                                     <label for="inputName" class="form-label">联系人姓名*</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="请输入联系人姓名" />
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        data-require="1"
+                                        name="user_name"
+                                        id="inputName"
+                                        placeholder="请输入联系人姓名"
+                                    />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail" class="form-label">联系人邮箱*</label>
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="请输入联系人邮箱" />
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        name="user_email"
+                                        data-require="1"
+                                        id="inputEmail"
+                                        placeholder="请输入联系人邮箱"
+                                    />
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="inputPhonenumber" class="form-label">联系人电话*</label>
                                     <input
                                         type="text"
+                                        name="user_phone"
+                                        data-require="1"
                                         class="form-control"
                                         id="inputPhonenumber"
                                         placeholder="请输入联系人电话"
                                     />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputSubject" class="form-label">联系人微信*</label>
-                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入联系人微信" />
+                                    <label for="inputWechat" class="form-label">联系人微信*</label>
+                                    <input
+                                        type="text"
+                                        name="user_wechat"
+                                        data-require="1"
+                                        class="form-control"
+                                        id="inputWechat"
+                                        placeholder="请输入联系人微信"
+                                    />
                                 </div>
 
                                 <div class="col-12">
                                     <label for="exampleFormControlTextarea2" class="form-label">留言</label>
                                     <textarea
                                         class="form-control"
+                                        name="message"
                                         id="exampleFormControlTextarea2"
                                         rows="3"
                                         placeholder="请输入留言"
@@ -202,6 +227,9 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/functions.js"></script>
 
         <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/email.min.js"></script>
+        <script src="assets/js/apiKeys.js"></script>
+        <script src="assets/js/common.js"></script>
         <script>
             $('#navbarCollapse').load('./components/nav.html')
             $('#footer').load('./components/footer.html')

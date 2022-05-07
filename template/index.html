@@ -42,7 +42,7 @@ Header START -->
                     <!-- Responsive navbar toggler -->
 
                     <!-- Nav right START -->
-                    <div style="display: flex;">
+                    <div style="display: flex">
                         <button
                             class="navbar-toggler"
                             type="button"
@@ -57,8 +57,16 @@ Header START -->
                         <div class="d-none d-sm-block">
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                            <a href="javascript:window.location.href='weixin://'" class="btn btn-link text-white mb-0">
+                            <a
+                                href="javascript:window.location.href='weixin://'"
+                                class="btn btn-link text-white mb-0"
+                                id="wechart_code"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
                                 <img src="./assets/images/public/weChat.png" alt="" />
+                                <ul aria-labelledby="wechart_code" class="dropdown-menu">adsfas</ul>
                             </a>
                         </div>
                     </div>
@@ -151,7 +159,7 @@ Service section START -->
                                     </a>
                                 </div>
                                 <div class="learn-more flex-row justify-content-end mt-1">
-                                    <a href="#" class="card-link text-primary fw-bold">查看详情</a>
+                                    <a href="./orange.html" class="card-link text-primary fw-bold">查看详情</a>
                                 </div>
                             </div>
                             <!-- Card END -->
@@ -175,7 +183,7 @@ Service section START -->
                                     </a>
                                 </div>
                                 <div class="learn-more flex-row justify-content-end mt-1">
-                                    <a href="#" class="card-link text-primary fw-bold">查看详情</a>
+                                    <a href="./passion.html" class="card-link text-primary fw-bold">查看详情</a>
                                 </div>
                             </div>
                             <!-- Card END -->
@@ -193,12 +201,12 @@ Service section START -->
 
                                 <!-- Button link -->
                                 <div class="video fine-arts-service bg-center">
-                                    <a data-glightbox data-gallery="office-tour" href="./assets/video/fine-arts-service.mp4">
+                                    <!-- <a data-glightbox data-gallery="office-tour" href="./assets/video/fine-arts-service.mp4">
                                         <img class="btn" src="./assets/images/icon/play.png" alt="" />
-                                    </a>
+                                    </a> -->
                                 </div>
                                 <div class="learn-more flex-row justify-content-end mt-1">
-                                    <a href="#" class="card-link text-primary fw-bold">查看详情</a>
+                                    <a href="./fine-arts.html" class="card-link text-primary fw-bold">查看详情</a>
                                 </div>
                             </div>
                             <!-- Card END -->
@@ -347,8 +355,9 @@ Activity section  START -->
                             <!-- Tiny Slider START -->
                             <div class="tiny-slider arrow-round arrow-gray arrow-hover">
                                 <div
+                                    id="blog-container"
                                     class="tiny-slider-inner my-3"
-                                    data-autoplay="true"
+                                    data-auto-play="false"
                                     data-edge="20"
                                     data-arrow="true"
                                     data-dots="false"
@@ -356,15 +365,11 @@ Activity section  START -->
                                     data-items-md="2"
                                     data-items-sm="1"
                                 >
-                                    <div>
-                                        <!-- Card START -->
+                                    <div class="blog-item">
                                         <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
+                                            <div class="pb-0 img">
                                                 <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
                                             </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
                                             <div class="card-body pt-0">
                                                 <!-- Content -->
                                                 <p class="card-text">2022 / 04 / 01</p>
@@ -372,156 +377,7 @@ Activity section  START -->
                                                     文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
                                                 </p>
                                             </div>
-                                            <!-- Card body END -->
                                         </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
-                                    </div>
-
-                                    <div>
-                                        <!-- Card START -->
-                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
-                                            <!-- Card header START -->
-                                            <div class="pb-0">
-                                                <img src="./assets/images/bg/activity.png" alt="" class="article-cover" />
-                                            </div>
-                                            <!-- Card header END -->
-                                            <!-- Card Body START -->
-                                            <div class="card-body pt-0">
-                                                <!-- Content -->
-                                                <p class="card-text">2022 / 04 / 01</p>
-                                                <p class="card-text">
-                                                    文章标题示例：游戏出海游戏出海游戏出海 文章标题示例游戏出海游戏出海游戏出海
-                                                </p>
-                                            </div>
-                                            <!-- Card body END -->
-                                        </div>
-                                        <!--Card END  -->
                                     </div>
                                 </div>
                             </div>
@@ -560,7 +416,6 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
         <!-- Template Functions -->
-        <script src="assets/js/functions.js"></script>
     </body>
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
     <script>
@@ -570,5 +425,237 @@ JS libraries, plugins and custom scripts -->
         function goFree() {
             location.href = './free.html'
         }
+        $('#blog-container').click(function (e) {
+            console.log(e.target.getAttribute('data-id'))
+            let id = e.target.getAttribute('data-id')
+            location.href = `./blogs/${id}.html`
+        })
+        ;(function () {
+            // const blogs = [
+            //     {
+            //         id: '1',
+            //         coverImg: 'assets/images/blogs/001.png',
+            //         title: 'Share Creators公开课来了！后疫情时代，海外手游市场何去何从？',
+            //     },
+            //     {
+            //         id: '2',
+            //         coverImg: 'assets/images/blogs/002.png',
+            //         title: '后疫情时代，海外手游市场新增用户特征及出海机遇分析',
+            //     },
+            //     {
+            //         id: '3',
+            //         coverImg: 'assets/images/blogs/003.png',
+            //         title: '游戏出海正当时，突破文化壁垒或成为关键',
+            //     },
+            //     {
+            //         id: '4',
+            //         coverImg: 'assets/images/blogs/004.png',
+            //         title: '游戏美术大神们如何评价Share Creators智能数字资产管理系统',
+            //     },
+            //     {
+            //         id: '5',
+            //         coverImg: 'assets/images/blogs/005.png',
+            //         title: 'ShareCreators | 2022年数字资产管理的七大好处',
+            //     },
+            //     {
+            //         id: '6',
+            //         coverImg: 'assets/images/blogs/006.png',
+            //         title: '从管理中解放！Share Creators带你走进GDC2022！',
+            //     },
+            //     {
+            //         id: '7',
+            //         coverImg: 'assets/images/blogs/007.png',
+            //         title: '一起来了解ShareCreators的Orange数字资源管理系统',
+            //     },
+            //     {
+            //         id: '8',
+            //         coverImg: 'assets/images/blogs/008.png',
+            //         title: '认识游戏研发、团队协作的革命性软件工具 Share Creators Orange',
+            //     },
+            //     {
+            //         id: '9',
+            //         coverImg: 'assets/images/blogs/009.png',
+            //         title: '还在寻找高质量的游戏美术制作服务？',
+            //     },
+            //     {
+            //         id: '10',
+            //         coverImg: 'assets/images/blogs/010.png',
+            //         title: '认识Orange | 帮助你找到任何东西的企业数字资产管理和远程协作平台',
+            //     },
+            //     {
+            //         id: '11',
+            //         coverImg: 'assets/images/blogs/011.png',
+            //         title: '期待在GDC2022与您相见！!',
+            //     },
+            //     {
+            //         id: '12',
+            //         coverImg: 'assets/images/blogs/012.png',
+            //         title: 'Forbes Business | 后疫情时代，企业线上办公时面临的16个挑战（以及如何解决这些问题）',
+            //     },
+            //     {
+            //         id: '13',
+            //         coverImg: 'assets/images/blogs/013.png',
+            //         title: 'Forbes Business | 后疫情时代，企业如何安全、成功地重新开放业务的 15 种策略',
+            //     },
+            //     {
+            //         id: '14',
+            //         coverImg: 'assets/images/blogs/014.png',
+            //         title: '一家潜力与实力并存的美术工作室Share Creators，原来做过这么多大IP！还有大神Sasha坐镇！-7.GAME',
+            //     },
+            //     {
+            //         id: '15',
+            //         coverImg: 'assets/images/blogs/015.png',
+            //         title: 'ShareCreators参与制作全球收入最高的五个手机大逃杀游戏中的四个',
+            //     },
+            //     {
+            //         id: '16',
+            //         coverImg: 'assets/images/blogs/016.png',
+            //         title: 'ShareCreators | Ratebeer选择ECM来集中资产并启用分销商网络',
+            //     },
+            //     {
+            //         id: '17',
+            //         coverImg: 'assets/images/blogs/017.png',
+            //         title: 'ShareCreators | 企业内容管理系统（ECM）',
+            //     },
+            //     {
+            //         id: '18',
+            //         coverImg: 'assets/images/blogs/018.png',
+            //         title: '人力资源数字化如何使组织成功的三个案例',
+            //     },
+            //     {
+            //         id: '19',
+            //         coverImg: 'assets/images/blogs/019.png',
+            //         title: 'SC手游推荐 | 《猫和老鼠》快来一键找回你的童年! ',
+            //     },
+            //     {
+            //         id: '20',
+            //         coverImg: 'assets/images/blogs/020.png',
+            //         title: '2022 年 6 大热门信息管理趋势',
+            //     },
+            // ]
+            const websiteBlog = [
+                {
+                    id: '1',
+                    coverImg: 'assets/images/blogs/1.png',
+                    title: '后疫情时代，海外手游市场新增用户特征及出海机遇分析',
+                },
+                {
+                    id: '2',
+                    coverImg: 'assets/images/blogs/2.png',
+                    title: '国产游戏出海正当时，突破文化壁垒或成为关键',
+                },
+                {
+                    id: '3',
+                    coverImg: 'assets/images/blogs/3.png',
+                    title: '游戏美术大神们如何评价Share Creators智能数字资产管理系统',
+                },
+                {
+                    id: '4',
+                    coverImg: 'assets/images/blogs/4.png',
+                    title: '从管理中解放！Share Creators带你走进GDC2022！',
+                },
+                {
+                    id: '5',
+                    coverImg: 'assets/images/blogs/5.png',
+                    title: 'Share Creators智能数字资源管理系统介绍视频新鲜出炉，与您相约GDC2022',
+                },
+                {
+                    id: '6',
+                    coverImg: 'assets/images/blogs/6.png',
+                    title: '一图看懂为什么Orange+Passion=企业级Google',
+                },
+                {
+                    id: '7',
+                    coverImg: 'assets/images/blogs/7.png',
+                    title: 'ShareCretors参与制作全球收a入最高的五个手机大逃杀游戏中的四个',
+                },
+                {
+                    id: '8',
+                    coverImg: 'assets/images/blogs/8.png',
+                    title: '如何创新和改变世界',
+                },
+                {
+                    id: '9',
+                    coverImg: 'assets/images/blogs/9.png',
+                    title: 'Ratebeer如何选择ECM来集中资产并启用分销商网络',
+                },
+                {
+                    id: '10',
+                    coverImg: 'assets/images/blogs/10.png',
+                    title: '企业如何进行内容管理',
+                },
+                {
+                    id: '11',
+                    coverImg: 'assets/images/blogs/11.png',
+                    title: '人力资源数字化如何导致组织成功的3个示例!',
+                },
+                {
+                    id: '12',
+                    coverImg: 'assets/images/blogs/12.png',
+                    title: 'ECM 11 大优势',
+                },
+                {
+                    id: '13',
+                    coverImg: 'assets/images/blogs/13.png',
+                    title: '内容服务平台提高HR合规性和安全性的4种方式',
+                },
+                {
+                    id: '14',
+                    coverImg: 'assets/images/blogs/14.png',
+                    title: '公司如何将处理时间和成本减少50%以上',
+                },
+                {
+                    id: '15',
+                    coverImg: 'assets/images/blogs/15.png',
+                    title: '为什么选择企业内容管理系统（ECM）',
+                },
+                {
+                    id: '16',
+                    coverImg: 'assets/images/blogs/16.png',
+                    title: '2022 年 6 大热门信息管理趋势',
+                },
+                {
+                    id: '17',
+                    coverImg: 'assets/images/blogs/17.png',
+                    title: '为什么选择Share Creators人工智能资源管理探索平台',
+                },
+                {
+                    id: '18',
+                    coverImg: 'assets/images/blogs/18.png',
+                    title: '2022年数字资产管理的7大好处',
+                },
+                {
+                    id: '19',
+                    coverImg: 'assets/images/blogs/19.png',
+                    title: '游戏全球化美术风格差异分析及案例分享——GDC 2019游戏出海市场营销峰会 ',
+                },
+                {
+                    id: '20',
+                    coverImg: 'assets/images/blogs/20.png',
+                    title: 'Share Creators是怎样解决游戏行业资源储存和管理目前的痛点？',
+                },
+            ]
+
+            let doms = []
+            websiteBlog.forEach((item) => {
+                doms.push(`<div class="blog-item">
+                                        <div class="activity-card rounded-4 rounded-bottom-right-0 px-0 py-0">
+                                            <div class="pb-0 img flex-center">
+                                        <img src="${item.coverImg}" alt="" data-id="${item.id}" class="article-cover" />
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <p class="card-text">
+                                            ${item.title}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>`)
+            })
+            $('#blog-container').html(doms.join(''))
+            // setTimeout(() => {
+            //     e.tinySlider()
+            // }, 0);
+        })()
     </script>
+    <script src="assets/js/functions.js"></script>
 </html>

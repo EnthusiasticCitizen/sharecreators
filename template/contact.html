@@ -97,34 +97,59 @@ Contact START -->
                             <!-- Title -->
                             <h2 class="mb-3">联系我们</h2>
                             <!-- Form START -->
-                            <form class="row g-3">
+                            <form class="row g-3" id="form">
+                                <input type="text" style="display: none" name="page_name" value="联系我们" />
                                 <div class="col-md-6">
                                     <label for="inputName" class="form-label">姓名*</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="请输入联系人姓名" />
+                                    <input
+                                        type="text"
+                                        name="user_name"
+                                        class="form-control"
+                                        data-require="1"
+                                        id="inputName"
+                                        placeholder="请输入联系人姓名"
+                                    />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputEmail" class="form-label">手机号*</label>
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="请输入联系人邮箱" />
+                                    <label for="inputPhone" class="form-label">手机号*</label>
+                                    <input
+                                        type="phone"
+                                        name="user_phone"
+                                        data-require="1"
+                                        class="form-control"
+                                        id="inputPhone"
+                                        placeholder="请输入联系人邮箱"
+                                    />
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="inputPhonenumber" class="form-label">公司名称*</label>
+                                    <label for="inputCompanyName" class="form-label">公司名称*</label>
                                     <input
                                         type="text"
+                                        name="company_name"
+                                        data-require="1"
                                         class="form-control"
-                                        id="inputPhonenumber"
+                                        id="inputCompanyName"
                                         placeholder="请输入联系人电话"
                                     />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputSubject" class="form-label">联系人微信</label>
-                                    <input type="text" class="form-control" id="inputSubject" placeholder="请输入联系人微信" />
+                                    <label for="inputWechat" class="form-label">联系人微信</label>
+                                    <input
+                                        type="text"
+                                        name="user_wechat"
+                                        class="form-control"
+                                        id="inputWechat"
+                                        placeholder="请输入联系人微信"
+                                    />
                                 </div>
 
                                 <div class="col-12">
                                     <label for="exampleFormControlTextarea2" class="form-label">留言*</label>
                                     <textarea
                                         class="form-control"
+                                        name="message"
+                                        data-require="1"
                                         id="exampleFormControlTextarea2"
                                         rows="3"
                                         placeholder="请输入留言"
@@ -140,7 +165,7 @@ Contact START -->
                         </div>
 
                         <div class="col-lg-5 ps-lg-3">
-                            <div class="row g-4">
+                            <div class="row g-4" style="justify-content: flex-end">
                                 <div class="col-lg-10">
                                     <div class="shadow p-4 rounded-3 mb-4 recommend">
                                         <!-- Title -->
@@ -227,10 +252,16 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/functions.js"></script>
 
         <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/email.min.js"></script>
+        <script src="assets/js/apiKeys.js"></script>
+        <!-- <script>
+            const checks = ['user_name', 'user_phone', 'company_name', 'message']
+        </script> -->
+        <script src="assets/js/common.js"></script>
         <script>
             $('#navbarCollapse').load('./components/nav.html')
             $('#footer').load('./components/footer.html')
-            function goContact(){
+            function goContact() {
                 location.href = './contact.html'
             }
         </script>

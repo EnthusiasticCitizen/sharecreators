@@ -109,3 +109,10 @@
     font-family: SourceHanSansCN;
     color: #fff;
 }
+.partner-item {
+    margin: 3rem auto 1rem;
+}
+.core-name {
+    text-align: center;
+    color: #000;
+}
