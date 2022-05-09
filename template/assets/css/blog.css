@@ -6,3 +6,12 @@
 p {
     white-space: inherit !important;
 }
+em {
+    white-space: initial !important;
+    word-break: keep-all !important;
+    font-style: inherit;
+}
+#header {
+    max-width: 1320px;
+    margin: auto;
+}

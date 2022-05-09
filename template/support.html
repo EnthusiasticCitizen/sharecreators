@@ -43,25 +43,34 @@ Header START -->
                     <!-- Logo END -->
 
                     <!-- Responsive navbar toggler -->
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                        aria-controls="navbarCollapse"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <!-- Nav right START -->
-                    <div class="d-none d-sm-block">
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
-                        <a href="sign-up.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">
-                            <img src="./assets/images/public/weChat.png" alt="" />
-                        </a>
+                    <div style="display: flex">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-none d-sm-block">
+                            <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
+                            <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
+                            <a
+                                href="#"
+                                class="btn btn-link text-white mb-0"
+                                id="wechart_code"
+                            >
+                                <img src="./assets/images/public/weChat.png" alt="" />
+                                <div class="header-wechat-code show">
+                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <!-- Nav right END -->
                 </div>
@@ -76,6 +85,16 @@ Header END -->
         <main class="support-main">
             <!-- =======================
 Hero banner START -->
+
+            <section class="bg-primary position-relative banner">
+                <!-- Main navbar START -->
+                <div class="collapse navbar-collapse show" id="navbarCollapse"></div>
+                <!-- Main navbar END -->
+                <!--	main-nav end	-->
+
+                <!--	banner content start	-->
+                <div class="container banner-content pt-5 mt-4 banner-text">技术支持</div>
+            </section>
             <!-- =======================
 Hero banner END -->
 
@@ -209,10 +228,10 @@ JS libraries, plugins and custom scripts -->
     <script src="assets/js/apiKeys.js"></script>
     <script src="assets/js/common.js"></script>
     <script>
+        $('#navbarCollapse').load('./components/nav.html')
         $('#footer').load('./components/footer.html')
         $('#demo-video').on('click', function () {
             location.href = 'https://www.ixigua.com/home/361072885505245'
         })
-
     </script>
 </html>

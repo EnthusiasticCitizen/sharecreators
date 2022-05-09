@@ -40,25 +40,34 @@ Header START -->
                     <!-- Logo END -->
 
                     <!-- Responsive navbar toggler -->
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                        aria-controls="navbarCollapse"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <!-- Nav right START -->
-                    <div class="d-none d-sm-block">
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
-                        <a href="sign-up.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">
-                            <img src="./assets/images/public/weChat.png" alt="" />
-                        </a>
+                    <div style="display: flex">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-none d-sm-block">
+                            <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
+                            <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
+                            <a
+                                href="#"
+                                class="btn btn-link text-white mb-0"
+                                id="wechart_code"
+                            >
+                                <img src="./assets/images/public/weChat.png" alt="" />
+                                <div class="header-wechat-code show">
+                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <!-- Nav right END -->
                 </div>
@@ -153,7 +162,7 @@ Main banner START -->
                 <div class="type-area">
                     <div class="function-title">Orange智能数字资产管理系统 · 功能亮点</div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">AI智能搜索</div>
                             <div class="des-content">
                                 AI智能识别解析资源文件，针对海量数据进行智能化识别并提供多样的搜索条件，方便快速搜索需要的资源文件
@@ -166,7 +175,7 @@ Main banner START -->
                                 <li>· 网址搜索</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6 function-search">
+                        <div class="card-video flex-center col-5 function-search">
                             <a data-glightbox data-gallery="office-tour" href="./assets/video/function-search.mp4">
                                 <img src="./assets/images/icon/play.png" alt="" />
                             </a>
@@ -174,7 +183,7 @@ Main banner START -->
                     </div>
 
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">实时查阅&评论多种文件</div>
                             <div class="des-content">
                                 全面支持多种资源格式秒级在线查阅 ， 可直接在资源上实现进度查看、审阅回复、实时分享等诸多操作
@@ -189,14 +198,14 @@ Main banner START -->
                                 <li>· BIM查看器</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6 function-look">
+                        <div class="card-video flex-center col-5 function-look">
                             <a data-glightbox data-gallery="office-tour" href="./assets/video/function-look.mp4">
                                 <img src="./assets/images/icon/play.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">AI智能识别</div>
                             <div class="des-content">
                                 配合强大的人工智能及自定义标签功能，针对海量数据进行智能化识别，可实现AI视频内容识别和NLP自然语义处理
@@ -208,14 +217,14 @@ Main banner START -->
                                 <li>· 预警分析</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6 function-ai">
+                        <div class="card-video flex-center col-5 function-ai">
                             <a data-glightbox data-gallery="office-tour" href="./assets/video/function-ai.mp4">
                                 <img src="./assets/images/icon/play.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">全流程深度集成</div>
                             <div class="des-content">从制作工具到游戏引擎，上下游全流程接入，大幅提升开发效率</div>
                             <div class="line"></div>
@@ -225,14 +234,14 @@ Main banner START -->
                                 <li>· 下游工具对接：SVN, Perforce代码控制等</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6 function-integration">
+                        <div class="card-video flex-center col-5 function-integration">
                             <a data-glightbox data-gallery="office-tour" href="./assets/video/function-integration.mp4">
                                 <img src="./assets/images/icon/play.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">高效协作 无缝沟通</div>
                             <div class="des-content">
                                 可直接在资源上实现进度查看、审阅回复、实时分享等诸多操作；沟通工具API接口全方位集成，实现内/外部团队高效无缝沟通
@@ -245,14 +254,14 @@ Main banner START -->
                                 <li>· 通讯软件API (飞书、钉钉等）</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6 function-collaboration">
+                        <div class="card-video flex-center col-5 function-collaboration">
                             <a data-glightbox data-gallery="office-tour" href="./assets/video/function-collaboration.mp4">
                                 <img src="./assets/images/icon/play.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">更高效、安全的资源统一管理</div>
                             <div class="des-content">
                                 工作区域划分、权限控制团队资源、分享权限控制等功能，打造更高效及安全的资源统一管理环境
@@ -267,7 +276,7 @@ Main banner START -->
                                 <li>· 安全的资源版权(水印)</li>
                             </ul>
                         </div>
-                        <div class="card-video flex-center col-6"></div>
+                        <div class="card-video flex-center col-5"></div>
                     </div>
                 </div>
             </section>

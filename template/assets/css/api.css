@@ -1,4 +1,3 @@
-
 .banner-title {
     text-align: left;
     font-size: max(3rem, 33.9%);
@@ -15,7 +14,11 @@
     background-color: #f2f0ee;
 }
 .creative .partner-item {
-
+    width: 16%;
+}
+.plugin {
+    width: 50%;
+    min-width: 600px;
 }
 .plugin-img {
     overflow: hidden;

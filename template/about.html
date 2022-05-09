@@ -43,25 +43,34 @@ Header START -->
                     <!-- Logo END -->
 
                     <!-- Responsive navbar toggler -->
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                        aria-controls="navbarCollapse"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <!-- Nav right START -->
-                    <div class="d-none d-sm-block">
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
-                        <a href="sign-up.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">
-                            <img src="./assets/images/public/weChat.png" alt="" />
-                        </a>
+                    <div style="display: flex">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-none d-sm-block">
+                            <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
+                            <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
+                            <a
+                                href="#"
+                                class="btn btn-link text-white mb-0"
+                                id="wechart_code"
+                            >
+                                <img src="./assets/images/public/weChat.png" alt="" />
+                                <div class="header-wechat-code show">
+                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <!-- Nav right END -->
                 </div>
@@ -91,7 +100,7 @@ Hero banner END -->
             <!-- =======================
 Contact START -->
             <section>
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-8 mx-auto" style="color: #000;">
                     <p>
                         我们是一家设计咨询和软件开发公司，总部位于美国旧金山湾区，在北京、成都等地设有区域公司，目前
                         团队规模约150人，专注于为全球游戏公司提供高质量的艺术咨询、艺术制作服务和软件服务。

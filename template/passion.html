@@ -40,25 +40,34 @@ Header START -->
                     <!-- Logo END -->
 
                     <!-- Responsive navbar toggler -->
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                        aria-controls="navbarCollapse"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <!-- Nav right START -->
-                    <div class="d-none d-sm-block">
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
-                        <a href="sign-up.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                        <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">
-                            <img src="./assets/images/public/weChat.png" alt="" />
-                        </a>
+                    <div style="display: flex">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-none d-sm-block">
+                            <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
+                            <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
+                            <a
+                                href="#"
+                                class="btn btn-link text-white mb-0"
+                                id="wechart_code"
+                            >
+                                <img src="./assets/images/public/weChat.png" alt="" />
+                                <div class="header-wechat-code show">
+                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <!-- Nav right END -->
                 </div>
@@ -154,7 +163,7 @@ Main banner START -->
                 <div class="type-area">
                     <div class="function-title">Passion智能项目管理系统 · 功能亮点</div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">多种格式在线查阅&评论标注</div>
                             <div class="des-content">
                                 可直接在线查阅3D 文件（FBX、OBJ等 ），2D文件 (PSD、PNG等)，2D动画文件（Spine）,
@@ -162,58 +171,58 @@ Main banner START -->
                                 动画或者视频中的某一帧直接进行标注反馈
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-mark">
+                        <div class="card-video flex-center col-5 function-mark">
                         </div>
                     </div>
 
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">智能数据可视化</div>
                             <div class="des-content">
                                 根据甘特图实时查看整体或个人的项目进度，同时自动生成项目数据对应的可视化图表，便于管理者从宏观角度把控项目计划，一眼洞悉项目全局
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-visual">
+                        <div class="card-video flex-center col-5 function-visual">
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">历史项目轻松查阅</div>
                             <div class="des-content">
                                 可在同一文件夹中查阅一个文件的所有历史版本，不需要费时重新翻阅聊天记录，同时也避免了聊天记录中“下载链接失效”情况的发生
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-history">
+                        <div class="card-video flex-center col-5 function-history">
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">多状态设置&数据沉淀</div>
                             <div class="des-content">
                                 可设置多种项目状态（未开始、进行中、暂停、完成），还可自由为项目设置完成度；项目整体数据自动在后台进行保存，便于项目分析&经营决策
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-state">
+                        <div class="card-video flex-center col-5 function-state">
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">系统高度定制化</div>
                             <div class="des-content">
                                 可为企业级客户提供更细致的定制化服务，根据具体需求和API接口情况进行定制化开发；同时支持私有化部署和公有云部署（可指定公有云）
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-custom">
+                        <div class="card-video flex-center col-5 function-custom">
                         </div>
                     </div>
                     <div class="card-body shadow function-item row">
-                        <div class="card-des col-6">
+                        <div class="card-des col-7">
                             <div class="des-title">与Orange智能数字资源管理系统完美适配</div>
                             <div class="des-content">
                                 可随时审阅Orange上所有已提交的文件（包括系统自动保存的版本），同时可与贵公司使用的通讯软件打通（如飞书、钉钉、Slack等）
                             </div>
                         </div>
-                        <div class="card-video flex-center col-6 function-match"></div>
+                        <div class="card-video flex-center col-5 function-match"></div>
                     </div>
                 </div>
             </section>
