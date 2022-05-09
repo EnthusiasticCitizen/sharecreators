@@ -1,359 +1,391 @@
 ul {
-  padding: 0;
+    padding: 0;
 }
 .orange-main {
-  color: #000;
+    color: #000;
 }
 .orange-main .banner {
-  position: relative;
+    position: relative;
 }
 .orange-main .computed-bg {
-  position: absolute;
-  left: 0;
-  top: 190px;
-  width: 100%;
-  height: 28rem;
+    position: absolute;
+    left: 0;
+    top: 190px;
+    width: 100%;
+    height: 28rem;
 }
 .orange-main .banner {
-  padding: 0;
-  height: 45rem;
-  padding-top: 100px;
+    padding: 0;
+    height: 45rem;
+    padding-top: 100px;
 }
 .orange-main .banner-text {
-  position: relative;
-  width: 35%;
-  margin: auto;
-  padding: 0;
-  text-align: center;
-  color: #000;
-  z-index: 1;
+    position: relative;
+    width: 35%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: #000;
+    z-index: 1;
 }
 .orange-main .banner-text .par1 {
-  font-size: 7.1em;
-  font-weight: bold;
+    font-size: 7.1em;
+    font-weight: bold;
 }
 
 .orange-main .banner-text .par2 {
-  font-size: 2.485em;
-  font-weight: bold;
+    font-size: 2.485em;
+    font-weight: bold;
 }
 
 .orange-main .banner-text .par3 {
-  font-size: 1.065em;
-  margin: 3rem 0 2.5rem 0;
+    font-size: 1.065em;
+    margin: 3rem 0 2.5rem 0;
 }
 
 .free-btn {
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: #95dfd4;
-  border-color: #95dfd4;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #95dfd4;
+    border-color: #95dfd4;
 }
 
 .orange-main .seal {
 }
 
 .orange-main .seal .seal-title {
-  font-size: 1.8rem;
-  font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 .orange-main .seal .seal-content {
-  font-size: 1rem;
-  margin-top: 2.8rem;
+    font-size: 1rem;
+    margin-top: 2.8rem;
 }
 
 .orange-main .seal .right {
-  position: relative;
-  background: url(../../assets/images/bg/orange-main.png) no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 32.6rem;
+    position: relative;
+    background: url(../../assets/images/bg/orange-main.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 32.6rem;
 }
 .orange-main .seal .right img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4rem;
-  height: 4rem;
-  transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4rem;
+    height: 4rem;
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .orange-main .pain {
-  background-color: #f7f8f9;
-  padding: 7rem 0 0 0;
+    background-color: #f7f8f9;
+    padding: 7rem 0 0 0;
 }
 
 .orange-main .pain .pain-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 .orange-main .pain .pain-content {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 3.75rem 0;
-  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3.75rem 0;
+    width: 100%;
 }
 
 .orange-main .pain .pain-content .item {
-  width: 20rem;
-  list-style: none;
+    width: 20rem;
+    list-style: none;
 }
 
 .orange-main .pain .pain-content .item-title {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: #000;
-  margin: 1.56rem 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #000;
+    margin: 1.56rem 0;
 }
 
 .orange-main .pain .pain-content .item-title .img {
-  width: 3.125rem;
-  height: 3.125rem;
-  background-color: #eeb2a4;
-  border-radius: 0.8rem;
-  border-bottom-right-radius: 0;
-  margin-right: 1.56rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    background-color: #eeb2a4;
+    border-radius: 0.8rem;
+    border-bottom-right-radius: 0;
+    margin-right: 1.56rem;
 }
 
 .orange-main .pain .pain-content .item-title .img img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .orange-main .pain .pain-content .item-content {
-  font-size: 0.937rem;
-  color: #000;
+    font-size: 0.937rem;
+    color: #000;
 }
 
 .orange-main .function {
-  background: url("../../assets/images/orange/bg.png");
-  background-size: 100% 100%;
+    background: url('../../assets/images/orange/bg.png');
+    background-size: 100% 100%;
 }
 
 .orange-main .function-title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  text-align: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .orange-main .function .function-item {
-  display: flex;
-  max-width: 1000px;
-  padding: 2.5rem;
-  background-color: #fff;
-  border-radius: 1.56rem;
-  margin: 3.75rem auto 0;
+    display: flex;
+    max-width: 1000px;
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: 1.56rem;
+    margin: 3.75rem auto 0;
 }
 
 .orange-main .function .card-des {
-  padding-right: 3.687rem;
-  flex: 1;
+    padding-right: 3.687rem;
+    flex: 1;
 }
 
 .orange-main .function .card-des .des-title {
-  font-size: 1.56rem;
-  font-weight: bold;
-  margin-bottom: 2.187rem;
+    font-size: 1.56rem;
+    font-weight: bold;
+    margin-bottom: 2.187rem;
 }
 .orange-main .function .card-des .des-content {
-  font-size: 1rem;
-  color: #2d2d2d;
+    font-size: 1rem;
+    color: #2d2d2d;
 }
 .orange-main .function .card-des .line {
-  width: 100%;
-  height: 0.09rem;
-  margin: 2.468rem 0 1.937rem;
-  background-color: #dddedf;
+    width: 100%;
+    height: 0.09rem;
+    margin: 2.468rem 0 1.937rem;
+    background-color: #dddedf;
 }
 
 .orange-main .function .card-des .des-function-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 .orange-main .function .card-des .des-function-list li {
-  width: 50%;
-  height: 1.85rem;
-  font-size: 0.937;
-  color: #2d2d2d;
+    width: 50%;
+    height: 1.85rem;
+    font-size: 0.937;
+    color: #2d2d2d;
 
-  word-break: keep-all;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .orange-main .function .card-des .des-function-list.nocol li {
-  width: 100%;
+    width: 100%;
 }
 
 .orange-main .function .card-video {
-  min-width: 300px;
-  height: 16.347rem;
-  background-color: #000;
+    min-width: 300px;
+    height: 16.347rem;
+    background-color: #000;
 }
 .orange-main .function .card-video.function-search {
-  background: url(../video/function-search.png);
-  background-position: center center;
-  background-size: cover;
+    background: url(../video/function-search.png);
+    background-position: center center;
+    background-size: cover;
 }
 .orange-main .function .card-video.function-look {
-  background: url(../video/function-look.png);
-  background-position: center center;
-  background-size: cover;
+    background: url(../video/function-look.png);
+    background-position: center center;
+    background-size: cover;
 }
 .orange-main .function .card-video.function-ai {
-  background: url(../video/function-ai.png);
-  background-position: center center;
-  background-size: cover;
+    background: url(../video/function-ai.png);
+    background-position: center center;
+    background-size: cover;
 }
 .orange-main .function .card-video.function-integration {
-  background: url(../video/function-integration.png);
-  background-position: center center;
-  background-size: cover;
+    background: url(../video/function-integration.png);
+    background-position: center center;
+    background-size: cover;
 }
 .orange-main .function .card-video.function-collaboration {
-  background: url(../video/function-collaboration.png);
-  background-position: center center;
-  background-size: cover;
+    background: url(../video/function-collaboration.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.orange-main .function .card-video.function-mark {
+    background: url(../images/orange/function-mark.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.orange-main .function .card-video.function-visual {
+    background: url(../images/orange/function-visual.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.orange-main .function .card-video.function-history {
+    background: url(../images/orange/function-history.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.orange-main .function .card-video.function-state {
+    background: url(../images/orange/function-state.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.orange-main .function .card-video.function-custom {
+    background: url(../images/orange/function-custom.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 .orange-main .function .card-video img {
-  width: 3.125rem;
-  height: 3.125rem;
+    width: 3.125rem;
+    height: 3.125rem;
 }
 
 .orange-main .function .function-item:last-child .card-video {
-  background: url("../../assets/images/orange/eff.png") no-repeat 0 50%;
-  background-size: 28.8rem 11rem;
+    background: url('../../assets/images/orange/eff.png') no-repeat 0 50%;
+    background-size: 28.8rem 11rem;
+}
+.orange-main .function .function-item .card-video.function-match {
+    background: url(../images/orange/function-match.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .orange-main .evaluation,
 .orange-main .price {
-  background-color: #f7f8f9;
-  padding: 6.25rem 0;
+    background-color: #f7f8f9;
+    padding: 6.25rem 0;
 }
 .orange-main .evaluation .evaluation-title,
 .orange-main .price .price-title {
-  margin-bottom: 4rem;
-  font-size: 1.875rem;
-  font-weight: bold;
-  text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
 }
 .orange-main .evaluation .evaluation-content,
 .orange-main .price .price-content {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .orange-main .evaluation .evaluation-content .evaluation-content-item {
-  width: 20%;
-  min-width: 260px;
-  padding: 1.56rem;
-  border-radius: 50px 50px 0px 50px;
-  margin: 0 0.69rem 2rem;
-  background-color: #fff;
+    width: 20%;
+    min-width: 260px;
+    padding: 1.56rem;
+    border-radius: 50px 50px 0px 50px;
+    margin: 0 0.69rem 2rem;
+    background-color: #fff;
 }
 
 .orange-main .evaluation .evaluation-content .evaluation-content-item .icon {
-  width: 80%;
-  height: 5.75rem;
-  margin: 3.125rem auto;
+    width: 80%;
+    height: 5.75rem;
+    margin: 3.125rem auto;
 }
 .orange-main .evaluation .evaluation-content .evaluation-content-item img {
-  width: 100%;
+    width: 100%;
 }
 .orange-main .evaluation .evaluation-content .evaluation-content-item p {
-  font-size: 0.9375rem;
-  color: #000;
-  line-height: 1.66rem;
-  margin-bottom: 3.125rem;
+    font-size: 0.9375rem;
+    color: #000;
+    line-height: 1.66rem;
+    margin-bottom: 3.125rem;
 }
 
 .price .price-content .price-content-item {
-  background: url("../../assets/images/orange/price1.png") no-repeat;
-  background-size: 100%;
-  width: 30rem;
-  height: 67.56rem;
-  padding: 4.3rem 3.25rem;
+    background: url('../../assets/images/orange/price1.png') no-repeat;
+    background-size: 100%;
+    width: 30rem;
+    height: 67.56rem;
+    padding: 4.3rem 3.25rem;
 }
 .price .price-content .price-content-item .content1 {
-  font-size: 1.875rem;
-  font-weight: bold;
-  margin-bottom: 0;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 .price .price-content .price-content-item .content2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3.2rem;
 }
 .price .price-content .price-content-item .content3 {
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
 }
 .price .price-content .price-content-item .content4 {
-  font-size: 1.1875rem;
+    font-size: 1.1875rem;
 }
 .price .price-content .price-content-item .content5 {
-  font-size: 3.84375rem;
-  font-family: SourceHanSansCN;
-  font-weight: bold;
-  color: #54c2b1;
-  margin: 4.6rem 0;
+    font-size: 3.84375rem;
+    font-family: SourceHanSansCN;
+    font-weight: bold;
+    color: #54c2b1;
+    margin: 4.6rem 0;
 }
 .price .price-content .price-content-item .content5 span {
-  font-size: 1.9rem;
+    font-size: 1.9rem;
 }
 .price .price-content .price-content-item .content6 {
-  font-size: 1.1875rem;
+    font-size: 1.1875rem;
 }
 
 .price .price-content .price-content-item .price-function {
-  height: 18rem;
+    height: 18rem;
 }
 
 .price .price-content .price-content-item .price-function-item {
-  font-style: 1.1875;
-  color: #2d2d2d;
-  line-height: 1.8rem;
+    font-style: 1.1875;
+    color: #2d2d2d;
+    line-height: 1.8rem;
 }
 
 .price .price-content .price-content-item.price2-item {
-  background: url("../../assets/images/orange/price2.png") no-repeat;
-  background-size: 100%;
+    background: url('../../assets/images/orange/price2.png') no-repeat;
+    background-size: 100%;
 }
 .price .price-content .price-content-item.price2-item .content5 {
-  color: #e7a42f;
+    color: #e7a42f;
 }
 
 @media (max-width: 1000px) {
-  .computed-bg {
-    display: none;
-  }
+    .computed-bg {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-  .orange-main .banner-text {
-    width: 70%;
-  }
-  .orange-main .banner-text .par1{
-    font-size: 3.5em;
-  }
-  .orange-main .banner-text .par2 {
-    font-size: 1.28em;
-  }
-  .orange-main .banner-text .par3 {
-    font-size: 0.53em;
-  }
-  .orange-main .function .card-video {
-    min-width: 150px;
-    height: 150px;
-  }
+    .orange-main .banner-text {
+        width: 70%;
+    }
+    .orange-main .banner-text .par1 {
+        font-size: 3.5em;
+    }
+    .orange-main .banner-text .par2 {
+        font-size: 1.28em;
+    }
+    .orange-main .banner-text .par3 {
+        font-size: 0.53em;
+    }
+    .orange-main .function .card-video {
+        min-width: 150px;
+        height: 150px;
+    }
 }

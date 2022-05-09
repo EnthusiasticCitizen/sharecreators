@@ -152,6 +152,20 @@ li {
     margin: 0;
 }
 
+#wechart_code {
+    overflow: inherit;
+}
+#wechart_code .header-wechat-code {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    visibility: hidden;
+}
+
+#wechart_code:hover .header-wechat-code {
+    visibility: visible;
+}
+
 @media (max-width: 768px) {
     .logo {
         width: 105.35px;

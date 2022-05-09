@@ -58,7 +58,7 @@ Header START -->
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
                             <a
-                                href="javascript:window.location.href='weixin://'"
+                                href="#"
                                 class="btn btn-link text-white mb-0"
                                 id="wechart_code"
                                 data-bs-toggle="dropdown"
@@ -66,7 +66,9 @@ Header START -->
                                 aria-expanded="false"
                             >
                                 <img src="./assets/images/public/weChat.png" alt="" />
-                                <ul aria-labelledby="wechart_code" class="dropdown-menu">adsfas</ul>
+                                <div class="header-wechat-code show">
+                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -428,7 +430,7 @@ JS libraries, plugins and custom scripts -->
         $('#blog-container').click(function (e) {
             console.log(e.target.getAttribute('data-id'))
             let id = e.target.getAttribute('data-id')
-            location.href = `./blogs/${id}.html`
+            if (id) location.href = `./blogs/${id}.html`
         })
         ;(function () {
             // const blogs = [

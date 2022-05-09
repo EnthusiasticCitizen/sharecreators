@@ -116,3 +116,11 @@
     text-align: center;
     color: #000;
 }
+.core-item {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+}
