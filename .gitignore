@@ -9,3 +9,4 @@
 .metadata
 .settings
 *.zip
+node_modules
