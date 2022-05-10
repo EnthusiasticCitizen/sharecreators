@@ -1,3 +1,8 @@
+
+#home1 {
+    height: 100vh;
+    min-height: 892px;
+}
 .video-cover {
     position: relative;
 }

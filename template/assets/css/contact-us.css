@@ -1,12 +1,14 @@
 .contact-main .banner {
     height: 600px;
 }
-
+.navbar-collapse.collapse .nav-item .nav-link {
+    color: #fff;
+}
 .contact-main .banner-text {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .contact-main .page-foot-content {

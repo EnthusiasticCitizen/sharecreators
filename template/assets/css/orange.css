@@ -1,6 +1,18 @@
 ul {
     padding: 0;
 }
+.computed-orange {
+    height: 100vh;
+    min-height: 892px;
+    background: url(../images/orange/computed-orange.png) no-repeat 0 100px;
+    background-size: 100% calc(100% - 100px);
+}
+.computed-passion {
+    height: 100vh;
+    min-height: 892px;
+    background: url(../images/orange/computed-passion.png) no-repeat 0 100px;
+    background-size: 100% calc(100% - 100px);
+}
 .orange-main {
     color: #000;
 }
@@ -16,7 +28,7 @@ ul {
 }
 .orange-main .banner {
     padding: 0;
-    height: 45rem;
+    height: 50rem;
     padding-top: 100px;
 }
 .orange-main .banner-text {
@@ -51,6 +63,9 @@ ul {
 }
 
 .orange-main .seal {
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .orange-main .seal .seal-title {
@@ -80,7 +95,7 @@ ul {
 
 .orange-main .pain {
     background-color: #f7f8f9;
-    padding: 7rem 0 0 0;
+    padding: 0;
 }
 
 .orange-main .pain .pain-title {
@@ -94,7 +109,7 @@ ul {
 .orange-main .pain .pain-content {
     display: flex;
     justify-content: space-evenly;
-    margin: 3.75rem 0;
+    margin: 0;
     width: 100%;
 }
 
@@ -372,6 +387,14 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .computed-orange {
+        background: url(../images/orange/computed-orange.png) no-repeat 0 55px;
+        background-size: 100% calc(100% - 55px);
+    }
+    .computed-passion {
+        background: url(../images/orange/computed-passion.png) no-repeat 0 55px;
+        background-size: 100% calc(100% - 55px);
+    }
     .orange-main .banner-text {
         width: 70%;
     }

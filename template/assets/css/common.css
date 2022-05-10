@@ -36,6 +36,13 @@ li {
 
     }
 } */
+.bg-banner {
+    --bs-bg-opacity: 1;
+    background-image: url('../images/public/bg-banner.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+}
 .boot-alert {
     position: fixed;
     top: 100px;
@@ -68,6 +75,25 @@ li {
 .wechat-code {
     width: 2.5rem;
     height: 2.5rem;
+}
+#header .navbar .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 100px;
+}
+#navbarCollapse ul.navbar-nav-scroll {
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    transform: translate3d(-50%, -50%, 0);
+    cursor: pointer;
 }
 .navbar-collapse.collapse .nav-item .nav-link {
     color: #095045;

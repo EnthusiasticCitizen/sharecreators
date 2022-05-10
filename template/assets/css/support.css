@@ -1,10 +1,16 @@
+.banner {
+    height: 600px;
+}
 .support-main .banner-text {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
+.navbar-collapse.collapse .nav-item .nav-link {
+    color: #fff;
+}
 .support-main .send-msg-btn {
     background-color: #95dfd4;
     border-color: #95dfd4;
