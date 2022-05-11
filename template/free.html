@@ -60,14 +60,10 @@ Header START -->
                         <div class="d-none d-sm-block">
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                            <a
-                                href="#"
-                                class="btn btn-link text-white mb-0"
-                                id="wechart_code"
-                            >
+                            <a href="#" class="btn btn-link text-white mb-0" id="wechart_code">
                                 <img src="./assets/images/public/weChat.png" alt="" />
                                 <div class="header-wechat-code show">
-                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                    <img src="./assets/images/public/wechat-code.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -178,7 +174,9 @@ Contact START -->
                                 <div class="col-lg-10">
                                     <div class="shadow p-4 rounded-3 mb-4 recommend">
                                         <!-- Title -->
-                                        <div class="fs-6 mb-3" style="color: #000;font-weight: bold;">即刻开始试用我们的Orange智能 数字资产管理系统吧！</div>
+                                        <div class="fs-6 mb-3" style="color: #000; font-weight: bold">
+                                            即刻开始试用我们的Orange智能 数字资产管理系统吧！
+                                        </div>
                                         <div class="par">填写在线申请表格，我们将在24小时内回复您！</div>
                                         <div class="par">
                                             我们很乐意为您提供以下帮助，以加深您对Orange的了解：
@@ -240,8 +238,15 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/apiKeys.js"></script>
         <script src="assets/js/common.js"></script>
         <script>
-            $('#navbarCollapse').load('./components/nav.html')
+            $('#navbarCollapse').load('./components/nav.html', function(){
+                if(isMobile()) {
+                    $('#navbarCollapse').removeClass('show')
+                }
+            })
             $('#footer').load('./components/footer.html')
+
+            const form = document.querySelector('#form')
+            form.addEventListener('submit', sendEmail)
         </script>
     </body>
 </html>

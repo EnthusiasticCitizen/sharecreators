@@ -388,12 +388,12 @@ ul {
 
 @media (max-width: 768px) {
     .computed-orange {
-        background: url(../images/orange/computed-orange.png) no-repeat 0 55px;
-        background-size: 100% calc(100% - 55px);
+        background: url(../images/orange/computed-orange.png) no-repeat 0 50px;
+        background-size: 100% calc(100% - 50px);
     }
     .computed-passion {
-        background: url(../images/orange/computed-passion.png) no-repeat 0 55px;
-        background-size: 100% calc(100% - 55px);
+        background: url(../images/orange/computed-passion.png) no-repeat 0 50px;
+        background-size: 100% calc(100% - 50px);
     }
     .orange-main .banner-text {
         width: 70%;

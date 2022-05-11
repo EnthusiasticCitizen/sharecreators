@@ -17,6 +17,11 @@ html {
     background-size: cover;
 }
 
+.full-box {
+    width: 100%;
+    height: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -140,13 +145,16 @@ li {
 
 .partners {
     flex-wrap: wrap;
+    justify-content: center;
 }
 .partner-item .partner-img {
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box;
-    width: 152px;
-    height: 152px;
+    width: 100%;
+    height: 100%;
+    max-width: 152px;
+    max-height: 152px;
 }
 .partner-item {
     width: 20%;
@@ -157,6 +165,8 @@ li {
 .partner-item img {
     width: 100%;
     height: 100%;
+    max-width: 152px;
+    max-height: 152px;
 }
 
 .logo {
@@ -201,6 +211,16 @@ li {
         width: 76px;
         height: 76px;
         margin: 20px;
+    }
+    #home1,.orange-main .computed-orange,.orange-main .computed-passion {
+        height: auto;
+        min-height: auto;
+    }
+    #fine-arts-banner {
+        min-height: auto !important;
+    }
+    .fine-arts-banner {
+        top: 50px !important;
     }
 }
 

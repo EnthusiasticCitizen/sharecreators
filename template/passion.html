@@ -57,14 +57,10 @@ Header START -->
                         <div class="d-none d-sm-block">
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                            <a
-                                href="#"
-                                class="btn btn-link text-white mb-0"
-                                id="wechart_code"
-                            >
+                            <a href="#" class="btn btn-link text-white mb-0" id="wechart_code">
                                 <img src="./assets/images/public/weChat.png" alt="" />
                                 <div class="header-wechat-code show">
-                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                    <img src="./assets/images/public/wechat-code.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -170,8 +166,7 @@ Main banner START -->
                                 动画或者视频中的某一帧直接进行标注反馈
                             </div>
                         </div>
-                        <div class="card-video flex-center col-5 function-mark">
-                        </div>
+                        <div class="card-video flex-center col-5 function-mark"></div>
                     </div>
 
                     <div class="card-body shadow function-item row">
@@ -181,8 +176,7 @@ Main banner START -->
                                 根据甘特图实时查看整体或个人的项目进度，同时自动生成项目数据对应的可视化图表，便于管理者从宏观角度把控项目计划，一眼洞悉项目全局
                             </div>
                         </div>
-                        <div class="card-video flex-center col-5 function-visual">
-                        </div>
+                        <div class="card-video flex-center col-5 function-visual"></div>
                     </div>
                     <div class="card-body shadow function-item row">
                         <div class="card-des col-7">
@@ -191,8 +185,7 @@ Main banner START -->
                                 可在同一文件夹中查阅一个文件的所有历史版本，不需要费时重新翻阅聊天记录，同时也避免了聊天记录中“下载链接失效”情况的发生
                             </div>
                         </div>
-                        <div class="card-video flex-center col-5 function-history">
-                        </div>
+                        <div class="card-video flex-center col-5 function-history"></div>
                     </div>
                     <div class="card-body shadow function-item row">
                         <div class="card-des col-7">
@@ -201,8 +194,7 @@ Main banner START -->
                                 可设置多种项目状态（未开始、进行中、暂停、完成），还可自由为项目设置完成度；项目整体数据自动在后台进行保存，便于项目分析&经营决策
                             </div>
                         </div>
-                        <div class="card-video flex-center col-5 function-state">
-                        </div>
+                        <div class="card-video flex-center col-5 function-state"></div>
                     </div>
                     <div class="card-body shadow function-item row">
                         <div class="card-des col-7">
@@ -211,8 +203,7 @@ Main banner START -->
                                 可为企业级客户提供更细致的定制化服务，根据具体需求和API接口情况进行定制化开发；同时支持私有化部署和公有云部署（可指定公有云）
                             </div>
                         </div>
-                        <div class="card-video flex-center col-5 function-custom">
-                        </div>
+                        <div class="card-video flex-center col-5 function-custom"></div>
                     </div>
                     <div class="card-body shadow function-item row">
                         <div class="card-des col-7">
@@ -390,8 +381,13 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/functions.js"></script>
     </body>
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/common.js"></script>
     <script>
-        $('#navbarCollapse').load('./components/nav.html')
+        $('#navbarCollapse').load('./components/nav.html', function () {
+            if (isMobile()) {
+                $('#navbarCollapse').removeClass('show')
+            }
+        })
         $('#partner').load('./components/partner.html')
         $('#footer').load('./components/footer.html')
         function goFree() {

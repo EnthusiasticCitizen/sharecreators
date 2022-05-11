@@ -60,14 +60,10 @@ Header START -->
                         <div class="d-none d-sm-block">
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                            <a
-                                href="#"
-                                class="btn btn-link text-white mb-0"
-                                id="wechart_code"
-                            >
+                            <a href="#" class="btn btn-link text-white mb-0" id="wechart_code">
                                 <img src="./assets/images/public/weChat.png" alt="" />
                                 <div class="header-wechat-code show">
-                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                    <img src="./assets/images/public/wechat-code.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -108,7 +104,7 @@ Contact START -->
                                 <div class="col-lg-10">
                                     <div class="shadow p-4 rounded-3 mb-4 recommend">
                                         <!-- Title -->
-                                        <div class="fs-6 mb-3" style="color: #000;font-weight: bold;">使用产品遇到难题？</div>
+                                        <div class="fs-6 mb-3" style="color: #000; font-weight: bold">使用产品遇到难题？</div>
                                         <div class="par">
                                             如果您在使用产品时遇到难题，请填写右侧表格，我们将有专业的技术人员在24小时内为您提供帮助
                                         </div>
@@ -228,10 +224,17 @@ JS libraries, plugins and custom scripts -->
     <script src="assets/js/apiKeys.js"></script>
     <script src="assets/js/common.js"></script>
     <script>
-        $('#navbarCollapse').load('./components/nav.html')
+        $('#navbarCollapse').load('./components/nav.html', function () {
+            if (isMobile()) {
+                $('#navbarCollapse').removeClass('show')
+            }
+        })
         $('#footer').load('./components/footer.html')
         $('#demo-video').on('click', function () {
             location.href = 'https://www.ixigua.com/home/361072885505245'
         })
+
+        const form = document.querySelector('#form')
+        form.addEventListener('submit', sendEmail)
     </script>
 </html>

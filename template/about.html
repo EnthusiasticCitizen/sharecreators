@@ -227,8 +227,14 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/functions.js"></script>
 
         <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        
         <script>
-            $('#navbarCollapse').load('./components/nav.html')
+            $('#navbarCollapse').load('./components/nav.html', function(){
+                if(isMobile()) {
+                    $('#navbarCollapse').removeClass('show')
+                }
+            })
             $('#footer').load('./components/footer.html')
         </script>
     </body>

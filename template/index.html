@@ -108,7 +108,7 @@ Main banner START -->
                                 >
                                     <img class="play-btn" src="./assets/images/public/play.png" alt="" />
                                 </a>
-                                <img src="./assets/images/bg/orange-main.png" alt="" />
+                                <img class="full-box" src="./assets/images/bg/orange-main.png" alt="" />
                             </div>
                             <!-- RoW END -->
                         </div>
@@ -414,8 +414,13 @@ JS libraries, plugins and custom scripts -->
         <!-- Template Functions -->
     </body>
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/common.js"></script>
     <script>
-        $('#navbarCollapse').load('./components/nav.html')
+        $('#navbarCollapse').load('./components/nav.html', function(){
+            if(isMobile()) {
+                $('#navbarCollapse').removeClass('show')
+            }
+        })
         $('#partner').load('./components/partner.html')
         $('#footer').load('./components/footer.html')
         function goFree() {

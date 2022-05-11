@@ -240,10 +240,15 @@ JS libraries, plugins and custom scripts -->
 
         <!-- Template Functions -->
         <script src="assets/js/functions.js"></script>
+        <script src="assets/js/common.js"></script>
     </body>
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
     <script>
-        $('#navbarCollapse').load('./components/nav.html')
+        $('#navbarCollapse').load('./components/nav.html', function () {
+            if (isMobile()) {
+                $('#navbarCollapse').removeClass('show')
+            }
+        })
         $('#partner').load('./components/partner2.html')
         $('#footer').load('./components/footer.html')
         ;(function () {

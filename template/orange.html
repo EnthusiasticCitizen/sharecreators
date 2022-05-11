@@ -57,14 +57,10 @@ Header START -->
                         <div class="d-none d-sm-block">
                             <a href="https://www.sharecreators.com" class="btn btn-link text-white mb-0">英文版</a>
                             <a href="./free.html" class="btn btn-green-light mb-0 mx-2">免费试用</a>
-                            <a
-                                href="#"
-                                class="btn btn-link text-white mb-0"
-                                id="wechart_code"
-                            >
+                            <a href="#" class="btn btn-link text-white mb-0" id="wechart_code">
                                 <img src="./assets/images/public/weChat.png" alt="" />
                                 <div class="header-wechat-code show">
-                                    <img src="./assets/images/public/wechat-code.png" alt="">
+                                    <img src="./assets/images/public/wechat-code.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -417,8 +413,13 @@ JS libraries, plugins and custom scripts -->
         <script src="assets/js/functions.js"></script>
     </body>
     <script src="./docs/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/common.js"></script>
     <script>
-        $('#navbarCollapse').load('./components/nav.html')
+        $('#navbarCollapse').load('./components/nav.html', function () {
+            if (isMobile()) {
+                $('#navbarCollapse').removeClass('show')
+            }
+        })
         $('#partner').load('./components/partner.html')
         $('#footer').load('./components/footer.html')
         function goFree() {
