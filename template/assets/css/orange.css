@@ -194,16 +194,15 @@ ul {
     flex-wrap: wrap;
     padding: 0;
 }
-.orange-main .function .card-des .des-function-list li {
+.orange-main .function .card-des .des-function-list li.half {
     width: 50%;
-    height: 1.85rem;
+}
+.orange-main .function .card-des .des-function-list li {
+
+    /* height: 1.85rem; */
     font-size: 0.937;
     color: #2d2d2d;
 
-    word-break: keep-all;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .orange-main .function .card-des .des-function-list.nocol li {
     width: 100%;
@@ -383,6 +382,9 @@ ul {
 @media (max-width: 1000px) {
     .computed-bg {
         display: none;
+    }
+    .orange-main .function .card-des .des-function-list li.half {
+        width: 100%;
     }
 }
 
