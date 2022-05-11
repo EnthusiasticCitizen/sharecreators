@@ -66,3 +66,9 @@
     border-bottom-right-radius: 0;
     margin-bottom: 1.99rem;
 }
+
+@media (max-width: 604px) {
+    .navbar-collapse.collapse .nav-item .nav-link {
+        color: #000;
+    }
+}

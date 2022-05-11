@@ -325,7 +325,7 @@ ul {
 
 .price .price-content .price-content-item {
     background: url('../../assets/images/orange/price1.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 30rem;
     height: 67.56rem;
     padding: 4.3rem 3.25rem;
@@ -374,7 +374,7 @@ ul {
 
 .price .price-content .price-content-item.price2-item {
     background: url('../../assets/images/orange/price2.png') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .price .price-content .price-content-item.price2-item .content5 {
     color: #e7a42f;

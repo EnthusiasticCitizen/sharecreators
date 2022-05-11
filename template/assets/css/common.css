@@ -212,7 +212,9 @@ li {
         height: 76px;
         margin: 20px;
     }
-    #home1,.orange-main .computed-orange,.orange-main .computed-passion {
+    #home1,
+    .orange-main .computed-orange,
+    .orange-main .computed-passion {
         height: auto !important;
         min-height: auto !important;
     }
@@ -225,6 +227,16 @@ li {
 }
 
 @media (max-width: 604px) {
+    .support-main .banner.bg-banner,
+    .contact-main .banner.bg-banner {
+        height: auto;
+    }
+    .bg-banner .banner-content {
+        display: none;
+    }
+    .bg-banner .navbar-collapse.collapse .nav-item .nav-link {
+        color: #000;
+    }
     .navbar-collapse {
         position: absolute;
         right: 0;
