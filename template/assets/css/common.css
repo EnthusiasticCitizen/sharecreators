@@ -213,8 +213,8 @@ li {
         margin: 20px;
     }
     #home1,.orange-main .computed-orange,.orange-main .computed-passion {
-        height: auto;
-        min-height: auto;
+        height: auto !important;
+        min-height: auto !important;
     }
     #fine-arts-banner {
         min-height: auto !important;
