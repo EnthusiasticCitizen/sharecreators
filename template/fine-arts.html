@@ -137,6 +137,7 @@ Main banner START -->
                 class="image-gradient-overlay"
                 src="./assets/images/fine-arts/banner01.png"
                 alt=""
+                onload="loadimg"
               />
             </div>
 
@@ -363,10 +364,10 @@ JS libraries, plugins and custom scripts -->
           });
         }
       });
-      setTimeout(() => {
+      function loadimg() {
         document.querySelector("#fine-arts-banner").style.height =
           document.querySelector(".fine-arts-banner").offsetHeight + "px";
-      }, 100);
+      }
     })();
   </script>
 </html>
