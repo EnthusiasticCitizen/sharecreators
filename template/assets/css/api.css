@@ -10,6 +10,11 @@
     font-size: max(1rem, 33.9%);
     color: #000;
 }
+.banner-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .creative {
     background-color: #f2f0ee;
 }
