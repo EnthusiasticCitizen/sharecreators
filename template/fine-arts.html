@@ -45,6 +45,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/orange.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fine-arts.css" />
+    <script>
+      function loadimg() {
+        document.querySelector("#fine-arts-banner").style.height =
+          document.querySelector(".fine-arts-banner").offsetHeight + "px";
+      }
+    </script>
   </head>
 
   <body>
@@ -188,7 +194,7 @@ Main banner START -->
         </div>
       </section>
       <section class="seal container row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 pe-lg-5">
           <div class="seal-title">Share Creators 3A级游戏美术制作 & 咨询</div>
           <div class="seal-content">
             我们是一家3A级游戏美术设计和企业管理软件研发公司，总部位于旧金山湾区，在北京、成都等地设有区域公司，目前团队规模约150人，专注于为全球游戏公司提供高品质的艺术咨询和美术制作服务。
@@ -201,11 +207,11 @@ Main banner START -->
             我们将继续深耕游戏行业，提高游戏海外发行的转化率和留存率，让您的游戏获得更多玩家的喜爱！
           </div>
         </div>
-        <div class="col-lg-6 right">
+        <div class="col-lg-6 right fine-arts-service">
           <a
             data-glightbox
             data-gallery="office-tour"
-            href="./assets/video/header-contact-introduce.mp4"
+            href="./assets/video/fine-arts-service.mp4"
           >
             <img src="./assets/images/public/play.png" alt="" />
           </a>
@@ -323,11 +329,6 @@ JS libraries, plugins and custom scripts -->
     });
     $("#partner").load("./components/partner2.html");
     $("#footer").load("./components/footer.html");
-
-    function loadimg() {
-      document.querySelector("#fine-arts-banner").style.height =
-        document.querySelector(".fine-arts-banner").offsetHeight + "px";
-    }
 
     (function () {
       const arr = [23, 27, 34, 23, 3];
