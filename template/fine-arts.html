@@ -363,8 +363,10 @@ JS libraries, plugins and custom scripts -->
           });
         }
       });
-      document.querySelector("#fine-arts-banner").style.height =
-        document.querySelector(".fine-arts-banner").offsetHeight + "px";
+      setTimeout(() => {
+        document.querySelector("#fine-arts-banner").style.height =
+          document.querySelector(".fine-arts-banner").offsetHeight + "px";
+      }, 100);
     })();
   </script>
 </html>
