@@ -90,6 +90,12 @@ li {
     justify-content: space-between;
     padding: 0 100px;
 }
+#navbarCollapse {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
 .play-btn {
     position: absolute;
     top: 50%;

@@ -2,16 +2,22 @@ ul {
   padding: 0;
 }
 .computed-orange {
-  height: 100vh;
+  /* height: 100vh;
   min-height: 892px;
   background: url(../images/orange/computed-orange.png) no-repeat 0 100px;
-  background-size: 100% calc(100% - 100px);
+  background-size: 100% calc(100% - 100px); */
+}
+.banner-orange {
+  width: 100%;
 }
 .computed-passion {
-  height: 100vh;
+  /* height: 100vh;
   min-height: 892px;
   background: url(../images/orange/computed-passion.png) no-repeat 0 100px;
-  background-size: 100% calc(100% - 100px);
+  background-size: 100% calc(100% - 100px); */
+}
+.navbar-collapse.collapse .nav-item .nav-link {
+    color: #fff;
 }
 .orange-main {
   color: #000;
@@ -32,14 +38,15 @@ ul {
   padding-top: 100px;
 }
 .orange-main .banner-text {
-  position: relative;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
   width: 35%;
   margin: auto;
   padding: 0;
   text-align: center;
-  color: #000;
+  color: #fff;
   z-index: 1;
 }
 .orange-main .banner-text .par1 {
@@ -401,6 +408,21 @@ ul {
   .orange-main .function .card-des .des-function-list li.half {
     width: 100%;
   }
+  .orange-main .banner-text .par1 {
+    font-size: 3.6em;
+    font-weight: bold;
+  }
+  
+  .orange-main .banner-text .par2 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .orange-main .banner-text .par3 {
+    font-size: 0.9em;
+    margin: 3rem 0 2.5rem 0;
+  }
+  
 }
 
 @media (max-width: 768px) {
