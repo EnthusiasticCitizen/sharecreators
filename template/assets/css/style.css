@@ -18024,7 +18024,7 @@ header .navbar-nav .nav-link.active:before {
   }
 }
 .navbar-transparent {
-  background: #020a14;
+  background: #000;
   position: absolute;
   top: 0;
   left: 0;
