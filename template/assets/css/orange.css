@@ -306,6 +306,9 @@ ul {
   background-color: #f7f8f9;
   padding: 6.25rem 0;
 }
+.orange-main .price {
+  background: #fff;
+}
 .orange-main .evaluation .evaluation-title,
 .orange-main .price .price-title {
   margin-bottom: 4rem;
